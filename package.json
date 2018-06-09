@@ -1,0 +1,15 @@
+{
+  "name": "portal-frontend-new",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "less": "less-watch-compiler",
+    "dev": "npm run serve"
+  },
+  "author": "Alex Musarov",
+  "license": "ISC",
+  "devDependencies": {
+    "less": "^3.0.4"
+  }
+}

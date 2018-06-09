@@ -1,0 +1,308 @@
+.header-component
+{
+
+    background-color: @whiteColor;
+    height: 68px;
+
+    .header-wrapper
+    {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        height: 100%;
+    }
+
+    .header-left,
+    .header-right
+    {
+        display: flex;
+        align-items: center;
+    }
+
+    .logo
+    {
+        padding: 0 34px 0 0;
+        
+        svg
+        {
+            width: 198px;
+            height: 26px;
+        }
+    }
+
+    .tabs
+    {
+        position: relative;
+        padding: 0 50px 0;
+        height: 100%;
+        
+        a {
+            text-decoration: none;
+        }
+
+        .tab
+        {
+            font-size: 14px;
+            display: inline-block;
+            padding: 26px 15px;
+            cursor: pointer;
+            transition: @transition-primary;
+            a
+            {
+                color: #999999;
+            }
+
+            &:hover
+            {
+                color: @color-primary;
+            }
+
+            &--active
+            {
+                a
+                {
+                    color: #e30613;
+                    font-weight: bold;
+                }
+            }
+
+            &--dropdown{
+                position: relative;
+                
+
+                .dropdown
+                {
+                    opacity: 0;
+                    visibility: hidden;
+                    z-index: -1;
+                    position: absolute;
+                    background-color: #fff;
+                    list-style-type: none;
+                    padding: 30px 0;
+                    top: 80px;
+                    left: -50%;
+                    transform: translateX(20%);
+                    box-shadow: 0 18px 30px 0 rgba(128, 128, 128, 0.1);
+                    z-index: 999;
+                    transition: @transition-primary;
+
+                    &:before
+                    {
+                        content: '';
+                        display: block;
+                        width: 20px;
+                        height: 20px;
+                        background-color: #fff;
+                        position: absolute;
+                        top: -10px;
+                        left: 44%;
+                        transform: rotate(84rad);
+
+                    }
+
+                    &-item
+                    {
+                        display: flex;
+                        align-items: center;
+                        min-height: 40px;
+                        padding: 9px 32px;
+                        font-size: 14px;
+
+                        &:hover
+                        {
+                            background-color: #f8f8f8;
+                        }
+                    }
+                }
+
+                &:hover
+                {
+                    .dropdown
+                    {
+                        opacity: 1;
+                        visibility: visible;
+                        z-index: 9999;
+                    }
+                }
+            }
+
+        }
+
+        .underline-area
+        {
+            position: relative;
+
+            height: 2px;
+
+            .underline
+            {
+                position: absolute;
+                bottom: 0;
+                left: 12px;
+
+                width: 105px;
+                height: 100%;
+
+                background-color: @color-primary;
+            }
+        }
+    }
+
+    .tariffs-button
+    {
+        color: @text-color-primary;
+    }
+
+    .msisdn-block {
+
+        margin-right: 46px;
+
+        a
+        {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+        }
+
+        .wallet
+        {
+            margin-right: 10px;
+
+            &-icon
+            {
+                width: 18px;
+                height: 18px;
+            }
+        }
+        
+
+        .sum 
+        {
+            font-size: 14px;
+            font-weight: bold;
+            color: #4b4949;
+        }
+
+        .currency-format
+        {
+            svg
+            {
+                width: 14px;
+                height: 14px;
+                margin-top: 3px;
+            }
+        }
+    }
+
+    .lc 
+    {
+        display: flex;
+        align-items: center;
+
+        span 
+        {
+
+            display: block;
+            
+            &:not(:last-child)
+            {
+                margin-right: 16px;
+            }
+        }
+
+        .all-products
+        {
+
+            &-icon
+            {
+                width: 18px;
+                height: 18px;
+                fill: #cccccc;
+            }
+        }
+
+        .notifications
+        {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            background-color: #cccccc;
+            border-radius: 50px;
+            width: 22px;
+            height: 22px;
+            position: relative;
+            width: 22px;
+            height: 22px;
+            margin-right: 16px;
+            border-radius: 50px;
+            
+            &-icon
+            {
+                position: relative;
+                fill: @whiteColor;
+                width: 15px;
+                height: 15px;
+                top: 1px;
+            }
+
+            &:after {
+                content: '';
+                display: block;
+                position: absolute;
+                right: -4px;
+                top: -4px;
+                width: 6px;
+                height: 6px;
+                background-color: #e30613;
+                border: 3px solid #fff;
+                border-radius: 150px;
+            }
+        }
+
+        .profile
+        {
+
+            &-icon{
+                width: 40px;
+                height: 40px;
+                border-radius: 50px;
+            }
+        }
+    }
+
+    .to-lc-button
+    {
+        cursor: pointer;
+        position: relative;
+        z-index: 9999;
+
+        img
+        {
+            margin: 0 4px;
+            vertical-align: initial;
+        }
+
+        profile-menu
+        {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+    }
+
+    .button
+    {
+        height: 54px;
+        font-size: 16px;
+        text-align: center;
+        padding: 18px 50px 20px;
+    }
+
+    .auth-button
+    {
+        width: 140px;
+    }
+}

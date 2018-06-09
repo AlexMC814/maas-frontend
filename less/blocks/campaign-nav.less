@@ -1,0 +1,183 @@
+.campaign-nav {
+  position: relative;
+  background-color: @whiteColor;
+  padding: 4.3rem 2.4rem;
+
+  &:before {
+    position: absolute;
+    content: '';
+    z-index: 1;
+    top: 5rem;
+    left: 4.2rem;
+    bottom: 7rem;
+    width: 2px;
+    background-color: lighten(@text-color-light-grey, 17%);
+  }
+
+  &__item {
+    display: block;
+    position: relative;
+    margin-left: 4rem;
+    counter-increment: step-counter;
+    z-index: 2;
+    cursor: pointer;
+    
+    &:not(:last-child)
+    {
+      margin-bottom: 5rem;
+    }
+    
+    &:before {
+      content: counter(step-counter);
+      color: @text-color-light-grey;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 2px solid @text-color-light-grey;
+      border-radius: 50px;
+      position: absolute;
+      top: -5px;
+      left: -35px;
+      width: 2.4rem;
+      height: 2.4rem;
+      background-color: @whiteColor;
+
+    }
+
+  &.active {
+    position: relative;
+    z-index: 2;
+
+    .campaign-nav__icon
+    {
+      transform: rotate(-180deg);
+    }
+
+    &:before {
+      color: @whiteColor;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      border-radius: 50px;
+      top: -5px;
+      left: -35px;
+      width: 2.4rem;
+      height: 2.4rem;
+      border: 2px solid @primary-color;
+      background-color: @primary-color;
+    }
+
+  }
+
+  }
+
+  &__icon
+  {
+      transform: rotate(0deg); 
+      transition: @transition-primary;
+  }
+
+  &__audience
+  {
+    font-size: 1.4rem;
+    color: #38384a;
+  }
+
+  .campaign-sub-menu
+  {
+    margin-top: 2.6em;
+    list-style-type: none;
+
+    &__item
+    {
+
+      position: relative;
+      padding-left: 2rem;
+      line-height: 1.5;
+
+      a
+      {
+        text-decoration: none;
+        color: @text-color-light-grey;
+      }
+
+      &:not(:last-child)
+      {
+        margin-bottom: 3.7rem;
+      }
+
+      &:before
+      {
+        position: absolute;
+        top: .6rem;
+        left: 0;
+        content: '';
+        display: block;
+        width: .8rem;
+        height: .8rem;
+        border-radius: 2px;
+        background-color: @text-color-light-grey;
+      }
+
+      &.active
+      {
+
+        a
+        {
+          color: @darkGrayColor;
+        }
+
+        &:before
+        {
+          background-color: @color-primary;
+        }
+      }
+
+      &.completed
+      {
+        &:before
+        {
+          content: '';
+          display: inline-block;
+          background-image: url(/img/icons/checked.svg);
+          background-size: 12px 12px;
+          background-color: transparent;
+          background-repeat: no-repeat;
+          width: 1.8rem;
+          height: 1.8rem;
+        }
+      }
+
+    }
+
+  }
+  
+  &__upper {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;   
+  }
+
+  &__txt {
+
+    margin-right: 2rem;
+    color: @text-color-light-grey;
+
+    &--active {
+      font-weight: bold;
+      color: @text-color-dark-grey;
+    }
+  }
+
+  &__icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    fill: darken(@text-color-light-grey, 20%);
+  }
+
+  &__txt-under {
+    font-size: 1.5rem;
+    color: @text-color-dark-grey;
+  }
+}

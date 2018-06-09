@@ -1,0 +1,52 @@
+@import './utils/index';
+@import './components/index';
+@import './blocks/index';
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: @font-normal;
+  background-color: @main-bg-color;
+  font-size: @defaultFontSize;
+  min-height: 100vh;
+}
+
+
+.container {
+  max-width: 128rem;
+  margin: 0 auto;
+  padding: 0 5rem;
+
+  &--noGutters {
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 0;
+  }
+}
+
+// GRID PADDING CUSTOMIZATION
+
+[class*=col-], 
+[class*=col_], 
+[class~=col] {
+  box-sizing: border-box;
+  padding: 0 1rem 1rem;
+}
+
+.main-body {
+
+  .container {
+    background-color: @lightGrayColor-1;
+    padding: 5rem;
+  }
+
+}
+
+hr {
+  height: 2px;
+  background-color:#ffffff;
+  opacity: .3;
+  margin: 0;
+}

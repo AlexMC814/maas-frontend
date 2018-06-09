@@ -1,0 +1,112 @@
+.audience-settings {
+
+  background-color: @whiteColor;
+  min-height: 100%;
+
+  .segments
+  {
+    padding: 0 3.2rem;
+  }
+  
+  .top
+  {
+    padding: 3.2rem;
+
+    &--no-bottom
+    {
+      padding: 2.4rem;
+      padding-bottom: 0;
+    }
+  }
+
+  .heading
+  {
+    display: flex;
+    align-items: center;
+    
+
+    .button-back
+    {
+      height: 1.8rem;
+      margin-right: 1rem;
+
+      svg
+      {
+        width: 1.8rem;
+        height: 1.8rem;
+      }
+    }
+  }
+
+  .next-step
+    {
+
+      padding-top: 5rem;
+
+      input.btn
+      {
+        width: 240px;
+        font-size: 1.6rem;
+        cursor: pointer;
+      }
+    }
+}
+
+.audience-item {
+
+  display: block;
+  height: 12rem;
+  padding: 1.6rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid darken(@lightGrayColor-1, 5%);
+  cursor: pointer;
+  transition: @transition-primary;
+
+  &:hover {
+    border: 1px solid darken(@lightGrayColor-1, 10%);
+  }
+
+  &__icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.4rem;
+  }
+
+  &__title {
+    font-size: 1.4rem;
+    line-height: 2rem;
+  }
+
+  &--active {
+    background-color: @primary-color;
+    color: @whiteColor;
+    border: 1px solid @primary-color;
+
+    .segment-icon {
+      fill: @whiteColor;
+    }
+
+    .plus-icon {
+      fill: @whiteColor;
+      width: 2.4rem;
+      height: 2.4rem;
+    }
+    &:hover {
+      border: 1px solid @primary-color;
+    }
+  }
+
+}
+
+.segment-icon {
+  fill: lighten(@primary-color, 20%);
+  width: 3.2rem;
+  height: 3.2rem;
+}
+
+.plus-icon {
+  fill: @lightgrayColor-2;
+  width: 2.4rem;
+  height: 2.4rem;
+}

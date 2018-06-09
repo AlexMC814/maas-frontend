@@ -1,0 +1,45 @@
+.button-tabs
+{
+  display: flex;
+  align-items: center;
+  height: 4.8rem;
+  max-width: 40rem;
+  margin: 0 3rem;
+
+  .button-tab
+  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid @lightgrayColor-2;
+    width: 20rem;
+    height: 100%;
+    font-size: 1.6rem;
+    padding: 1.3rem;
+    cursor: pointer;
+
+    &.left
+    {
+      border-radius: 4px 0 0 4px;
+    }
+
+    &.middle
+    {
+      border-left: none;
+      border-right: none;
+
+    }
+
+    &.right
+    {
+      border-radius: 0 4px 4px 0;
+    }
+
+    &.active
+    {
+      color: @whiteColor;
+      background-color: @color-primary;
+      border: 1px solid @color-primary;
+    }
+  }
+}

@@ -1,0 +1,200 @@
+.btn 
+{
+
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  padding: @normalBtnPadding;
+  font-size: @normalBtnFontSize;
+  border-radius: 4px;
+  
+  &:not(:last-child) {
+    margin-right: 2rem;
+  }
+
+  &--text {
+    vertical-align: middle;
+    color: lighten(@darkBlueColor, 40%);
+    font-size: 1.4rem;
+    padding: 0;
+  }
+
+  &--red {
+    background-color: @primary-color;
+    color: @whiteColor;
+    cursor: pointer;
+    transition: @transition-primary;
+
+    &:hover {
+      background-color: lighten(@primary-color, 10%);
+    }
+  }
+
+  &--white {
+    background-color: @whiteColor;
+    border: 1px solid @whiteColor;
+    border-radius: @btn-border-radius;
+    transition: @transition-primary;
+    text-align: center;
+    color: #7F888E;
+
+    &:hover {
+      background-color: transparent;
+      color: @whiteColor;
+      border: 1px solid @whiteColor;
+    }
+  }
+
+  &--bordered {
+    color: #aeb0b3;
+    background-color: transparent;
+    border: 1px solid @lightgrayColor-2;
+    border-radius: @btn-border-radius;
+    transition: @transition-primary;
+
+    svg {
+      display: inline-block;
+      vertical-align: middle;
+      fill: darken(@lightgrayColor-2, 30%);
+      width: 2.5rem;
+      height: 2.5rem;
+      margin-right: 1rem;
+    }
+
+    &:hover {
+      background-color: @primary-color;
+      color: @whiteColor;
+      border: 1px solid @primary-color;
+
+      svg {
+        fill: @whiteColor;
+      }
+    }
+  }
+
+  &--bordered-light {
+    color: @whiteColor;
+    border: 1px solid @lightGrayColor-1;
+    border-radius: @btn-border-radius;
+    transition: @transition-primary;
+
+    svg {
+      display: inline-block;
+      vertical-align: middle;
+      fill: @whiteColor;
+      width: 2.5rem;
+      height: 2.5rem;
+      margin-right: 1rem;
+    }
+
+    &:hover {
+      background-color: @text-color-disabled;
+      border: 1px solid @text-color-disabled;
+
+      svg {
+        fill: @whiteColor;
+      }
+    }
+  }
+
+  &--disabled {
+    color: @text-color-disabled;
+    background-color: @bg-color-disabled;
+    border: 1px solid @bg-color-disabled;
+    cursor: default;
+
+    svg {
+      fill: @text-color-disabled;
+    }
+
+    &:hover {
+      color: @text-color-disabled;
+      background-color: @bg-color-disabled;
+      border: 1px solid @bg-color-disabled;
+
+      svg {
+        fill: @text-color-disabled;
+      }
+    }
+  }
+
+  &--full-width {
+    width: 100%;
+  }
+
+
+  // BUTTON SIZES
+  &--sm {
+    padding: @smallBtnPadding;
+    font-size: @smallBtnFontSize;
+  }
+
+  &--lg {
+    padding: @largeBtnPadding;
+    font-size: @largeBtnFontSize;
+  }
+}
+
+.more 
+{
+  display: inline-block;
+  margin-bottom: 5rem;
+  margin-left: .5rem;
+  padding: 1.65rem 0;
+
+  
+  &__link
+  {
+    display: flex;
+    align-items: center;
+    margin-right: 1rem;
+    text-decoration: none;
+    transition: @transition-primary;
+    color: lighten(@darkBlueColor, 30%);
+    
+    &:hover {
+      color: lighten(@darkBlueColor, 20%);
+
+      .more__icon {
+        fill: lighten(@darkBlueColor, 20%);
+      }
+    }
+  }
+
+  &__icon {
+    margin-left: .3rem;
+    width: 1.6rem;
+    height: 1.6rem;
+    fill: lighten(@darkBlueColor, 30%);
+    transition: @transition-primary;
+  }
+
+}
+
+.clear
+{
+
+  margin: 4rem 3.2rem;
+  cursor: pointer;
+
+  &__icon
+  {
+    width: 10px;
+    height: 10px;
+    margin-right: 8px;
+
+    svg
+    {
+      width: 10px;
+      height: 10px;
+      fill: #808080;
+    }
+  }
+
+  &__txt
+  {
+    font-size: 1.4rem;
+    color: #808080;
+  }
+
+}

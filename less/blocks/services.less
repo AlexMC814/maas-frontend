@@ -1,0 +1,29 @@
+.services {
+
+  &__title {
+    font-size: 2.4rem;
+    line-height: 3.5rem;
+  }
+
+  &__nav {
+    list-style-type: none;
+  }
+
+  &__item {
+    font-size: 1.6rem;
+    line-height: 3.5rem;
+    font-family: @font-light;
+
+    a {
+      text-decoration: none;
+      color: @whiteColor;
+      transition: @transition-primary;
+
+      &:hover {
+        color: darken(@whiteColor, 20%);
+      }
+    }
+
+  }
+
+}
