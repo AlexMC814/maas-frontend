@@ -1,6 +1,6 @@
 .settings
 {
-  padding: 4.3rem 2.4rem 3.2rem 2.4rem;
+  padding: 4.3rem 2.7rem 3.2rem 2.7rem;
 
   hr
   {
@@ -13,7 +13,7 @@
 {
     margin: 0 0 2.4rem 0;
     max-width: 48rem;
-    padding: 2rem 2.4rem 2rem 2.4rem;
+    //padding: 2rem 2.4rem 2rem 2.4rem;
 
 
     &--range
@@ -426,8 +426,13 @@
     justify-content: center;
     align-items: center;
     height: 12rem;
-    border: 1px dashed @lightgrayColor-2;
+    border: 2px dashed @lightgrayColor-2;
     cursor: pointer;
+
+    &.big
+    {
+      height: 24rem;
+    }
 
     .message
     {
@@ -447,7 +452,7 @@
 
       svg
       {
-        fill: #333333;
+        fill: @primary-color;
         width: 4rem;
         height: 4rem;
       }
@@ -507,5 +512,69 @@
         background-size: 16px 16px;
         border: none;
     }
+  }
+}
+
+.slider-checkbox
+{
+
+  display: block;
+  align-items: center;
+  position: relative;
+  width: 40px;
+  height: 16px;
+
+  label
+  {
+    cursor: pointer;
+  }
+
+  input
+  {
+    display: none;
+  }
+
+  input:checked + .slider-checkbox-line
+  {
+    background-color: @primary-color;
+  }
+
+  input:checked + .slider-checkbox-line:after
+  {
+    transform: translateX(20px);
+  }
+
+  &-line
+  {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(227, 6, 19, 0.1);
+    border-radius: 20px;
+    transition: all .3s ease-in;
+
+    &:after
+    {
+      content: '';
+      position: absolute;
+      box-sizing: border-box;
+      top: -4px;
+      width: 24px;
+      height: 24px;
+      border: 6px solid @primary-color;
+      border-radius: 50px;
+      background-color: @whiteColor;
+      transition: all .3s ease-in;
+    }
+  }
+
+  &-txt
+  {
+    position: absolute;
+    width: 400px;
+    top: 0;
+    margin-left: 50px;
   }
 }

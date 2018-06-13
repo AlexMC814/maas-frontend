@@ -5,18 +5,7 @@
 
   .segments
   {
-    padding: 0 3.2rem;
-  }
-  
-  .top
-  {
-    padding: 3.2rem;
-
-    &--no-bottom
-    {
-      padding: 2.4rem;
-      padding-bottom: 0;
-    }
+    padding: 0 2.7rem;
   }
 
   .heading
@@ -39,17 +28,28 @@
   }
 
   .next-step
+  {
+
+    padding-top: 5rem;
+
+    input.btn
     {
+      width: 240px;
+      font-size: 1.6rem;
+      cursor: pointer;
+    }
+  }
 
-      padding-top: 5rem;
+  .manual-settings
+  {
+    padding-top: 5rem;
 
-      input.btn
+    .btn
       {
-        width: 240px;
         font-size: 1.6rem;
         cursor: pointer;
       }
-    }
+  }
 }
 
 .audience-item {
@@ -63,7 +63,13 @@
   transition: @transition-primary;
 
   &:hover {
-    border: 1px solid darken(@lightGrayColor-1, 10%);
+    background-color: @primary-color;
+    color: @whiteColor;
+    border: 1px solid @primary-color;
+
+    .segment-icon {
+      fill: @whiteColor;
+    }
   }
 
   &__icons {
