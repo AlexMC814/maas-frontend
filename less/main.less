@@ -2,15 +2,20 @@
 @import './components/index';
 @import './blocks/index';
 
-html {
+html 
+{
   font-size: 62.5%;
+  height: 100%;
 }
 
-body {
+body 
+{
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: @font-normal;
   background-color: @main-bg-color;
   font-size: @defaultFontSize;
-  min-height: 100vh;
 }
 
 
@@ -36,6 +41,8 @@ body {
 }
 
 .main-body {
+  flex: 1;
+  margin-bottom: 5rem;
 
   .container {
     background-color: @lightGrayColor-1;

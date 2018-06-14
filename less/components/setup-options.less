@@ -1,0 +1,68 @@
+.setup-option
+{
+
+  padding: 2.4rem;
+  background-color: @whiteColor;
+  min-height: 100%;
+  cursor: pointer;
+  box-shadow: @box-shadow-main;
+
+  &-heading
+  {
+    font-size: 2rem;
+    font-weight: normal;
+    line-height: 1.2;
+    margin-bottom: 2.4rem;
+  }
+
+  &-body
+  {
+    font-size: 1.4rem;
+    color: #808080;
+    line-height: 1.43;
+    margin-bottom: 1.3rem;
+  }
+
+  &-next
+  {
+
+    text-align: right;
+
+    svg
+    {
+      fill: @whiteColor;
+      width: 32px;
+      height: 32px;
+    }
+  }
+
+  &.active
+  {
+    background-color: @color-primary;
+
+    .setup-option-heading,
+    .setup-option-body
+    {
+      color: @whiteColor;
+    }
+  }
+
+  &.locked
+  {
+    position: relative;
+
+    &:after
+    {
+      content: '';
+      position: absolute;
+      top: 40px;
+      right: 40px;
+      width: 180px;
+      height: 180px;
+      background-image: url(/img/icons/locked.svg);
+      background-repeat: no-repeat;
+      background-size: 180px 180px;
+      opacity: .04;
+    }
+  }
+}
