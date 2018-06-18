@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css">
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/main.css">  
     <title>МТС | Маркетолог</title>
 </head>
 
@@ -99,6 +99,7 @@
     </div>
     
     </div>
+    <!-- END HEADER -->
 
     <!--MAIN BODY-->
 
@@ -116,18 +117,43 @@
 
                     <div class="col-3">
                         <ol class="campaign-nav">
-                            <li class="campaign-nav__item">
+                            <li class="campaign-nav__item completed">
                                 <div class="campaign-nav__upper">
                                     <span class="campaign-nav__txt">Даты рассылки</span>
                                 </div>
+                                <span class="campaign-nav__sub">23.05.18-25.06.18</span>
                             </li>
-                            <li class="campaign-nav__item">
+                            <li class="campaign-nav__item campaign-nav__item active">
                                 <div class="campaign-nav__upper">
                                     <span class="campaign-nav__txt">Выбор аудитории</span>
                                     <svg class="campaign-nav__icon">
                                         <use xlink:href="/img/sprite-sheet.svg#arrow-down"></use>
                                     </svg>
                                 </div>
+                                <div class="campaign-nav__audience">
+                                  <span>23 525 673 чел.</span>
+                                </div>
+
+                                <ul class="campaign-sub-menu">
+                                  <li class="campaign-sub-menu__item completed">
+                                    <a href="#">Социально-демографические данные</a>
+                                  </li>
+                                  <li class="campaign-sub-menu__item active">
+                                    <a href="#">
+                                      ГЕО таргетинг
+                                    </a>
+                                  </li>  
+                                  <li class="campaign-sub-menu__item completed">
+                                    <a href="#">
+                                      Интересы и тонкие настройки
+                                    </a>
+                                  </li>
+                                  <li class="campaign-sub-menu__item">
+                                    <a href="">
+                                      Работа с собственной базой
+                                    </a>
+                                  </li>
+                                </ul>
                             </li>
                             <li class="campaign-nav__item">
                                 <div class="campaign-nav__upper">
@@ -157,189 +183,123 @@
                         </ol>
                     </div>
 
-                    <!--CAMPAIGN BODY-->
+                    <!--SETTINGS BODY-->
                     <div class="col">
                         <div class="campaign-settings">
                             <div class="grid-noGutter">
                                 <div class="col-8">
                                     <div class="audience-settings">
                                         <div class="section">
-                                            <h2 class="heading-2">Выбирайте из преднастроенных</h2>
-                                            <span class="sub-heading no-padding">Мы проанализировали аудиторию и выбрали
-                                                <br> для вас наиболее популярные сегменты</span>
+                                            <div class="heading">
+                                                <div class="button-back">
+                                                  <a href="">
+                                                    <svg>
+                                                      <use xlink:href="/img/sprite-sheet.svg#arrow-left"></use>
+                                                    </svg>
+                                                  </a>
+                                                  </div>
+                                                  <h2 class="heading-2">Гео таргетинг</h2>  
+                                            </div>
+                                            <div class="sub-heading padding-left">
+                                              <span>
+                                                Вы можете выбрать собственные локальные зоны рассылки на карте с помощью инструментов ниже или ввести свои адреса вручную.
+                                              </span>
+                                            </div>
+                                            <div class="button-tabs">
+                                              <span class="button-tab left active">Отметить на карте</span>
+                                              <span class="button-tab right">Ввести вручную</span>
+                                            </div> 
                                         </div>
-
                                         <!--OPTIONS-->
-                                        <div class="segments">
-                                            <div class="grid-3">
-                                                <div class="col">
-                                                    <div class="audience-item">
-                                                        <div class="audience-item__icons">
-                                                            <svg class="segment-icon">
-                                                                <use xlink:href="/img/sprite-sheet.svg#parents"></use>
-                                                            </svg>
-                                                            <svg class="plus-icon">
-                                                                <use xlink:href="/img/sprite-sheet.svg#plus"></use>
-                                                            </svg>
-                                                        </div>
-                                                        <p class="audience-item__title">Родители</p>
-                                                    </div>
-                                                </div>
-                                                <div class="col">
-                                                    <div class="audience-item audience-item--active">
-                                                        <div class="audience-item__icons">
-                                                            <svg class="segment-icon">
-                                                                <use xlink:href="/img/sprite-sheet.svg#realty"></use>
-                                                            </svg>
-                                                            <svg class="plus-icon">
-                                                                <use xlink:href="/img/sprite-sheet.svg#plus"></use>
-                                                            </svg>
-                                                        </div>
-                                                        <p class="audience-item__title">Покупатели недвижимости</p>
-                                                    </div>
-                                                </div>
-                                                <div class="col">
-                                                    <div class="audience-item">
-                                                        <div class="audience-item__icons">
-                                                            <svg class="segment-icon">
-                                                                <use xlink:href="/img/sprite-sheet.svg#smartphone"></use>
-                                                            </svg>
-                                                            <svg class="plus-icon">
-                                                                <use xlink:href="/img/sprite-sheet.svg#plus"></use>
-                                                            </svg>
-                                                        </div>
-                                                        <p class="audience-item__title">Владельцы смартфонов</p>
-                                                    </div>
-                                                </div>
-                                                <div class="col">
-                                                    <div class="audience-item">
-                                                        <div class="audience-item__icons">
-                                                            <svg class="segment-icon">
-                                                                <use xlink:href="/img/sprite-sheet.svg#mortgage"></use>
-                                                            </svg>
-                                                            <svg class="plus-icon">
-                                                                <use xlink:href="/img/sprite-sheet.svg#plus"></use>
-                                                            </svg>
-                                                        </div>
-                                                        <p class="audience-item__title">Интересуются ипотекой</p>
-                                                    </div>
-                                                </div>
-                                                <div class="col">
-                                                    <div class="audience-item">
-                                                        <div class="audience-item__icons">
-                                                            <svg class="segment-icon">
-                                                                <use xlink:href="/img/sprite-sheet.svg#english"></use>
-                                                            </svg>
-                                                            <svg class="plus-icon">
-                                                                <use xlink:href="/img/sprite-sheet.svg#plus"></use>
-                                                            </svg>
-                                                        </div>
-                                                        <p class="audience-item__title">Изучают
-                                                            <br> английский язык</p>
-                                                    </div>
-                                                </div>
-                                                <div class="col">
-                                                    <div class="audience-item">
-                                                        <div class="audience-item__icons">
-                                                            <svg class="segment-icon">
-                                                                <use xlink:href="/img/sprite-sheet.svg#credit"></use>
-                                                            </svg>
-                                                            <svg class="plus-icon">
-                                                                <use xlink:href="/img/sprite-sheet.svg#plus"></use>
-                                                            </svg>
-                                                        </div>
-                                                        <p class="audience-item__title">Пользуются кредитами</p>
-                                                    </div>
-                                                </div>
-                                                <div class="col">
-                                                    <div class="audience-item">
-                                                        <div class="audience-item__icons">
-                                                            <svg class="segment-icon">
-                                                                <use xlink:href="/img/sprite-sheet.svg#shopping"></use>
-                                                            </svg>
-                                                            <svg class="plus-icon">
-                                                                <use xlink:href="/img/sprite-sheet.svg#plus"></use>
-                                                            </svg>
-                                                        </div>
-                                                        <p class="audience-item__title">Online-
-                                                            <br>шопоголики</p>
-                                                    </div>
-                                                </div>
-                                                <div class="col">
-                                                    <div class="audience-item">
-                                                        <div class="audience-item__icons">
-                                                            <svg class="segment-icon">
-                                                                <use xlink:href="/img/sprite-sheet.svg#pregnant"></use>
-                                                            </svg>
-                                                            <svg class="plus-icon">
-                                                                <use xlink:href="/img/sprite-sheet.svg#plus"></use>
-                                                            </svg>
-                                                        </div>
-                                                        <p class="audience-item__title">Беременные
-                                                            <br> женщины</p>
-                                                    </div>
-                                                </div>
-                                                <div class="col">
-                                                    <div class="audience-item">
-                                                        <div class="audience-item__icons">
-                                                            <svg class="segment-icon">
-                                                                <use xlink:href="/img/sprite-sheet.svg#auto"></use>
-                                                            </svg>
-                                                            <svg class="plus-icon">
-                                                                <use xlink:href="/img/sprite-sheet.svg#plus"></use>
-                                                            </svg>
-                                                        </div>
-                                                        <p class="audience-item__title">Автомобилисты</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="more">
-                                                <a href="#" class="more__link">
-                                                    Показать все 
-                                                    <!-- <svg class="more__icon">
-                                                        <use xlink:href="/img/sprite-sheet.svg#arrow-right"></use>
-                                                    </svg> -->
-                                                </a>
-                                            </div>
-                                            <div class="manual-settings">
-                                                <a href="#" class="btn btn--bordered">Настроить самостоятельно</a>
-                                            </div>
+                                        <div class="map-container">
+                                                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A40a3817909ed87c99c081e092d1bd1f7ec534ef4b44a39d78b5c39152aca4410&amp;source=constructor" frameborder="0"></iframe>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-4">
-                                    <div class="campaign-info">
-                                        <div class="campaign-info__audience">
-                                            <div class="campaign-info-title">
-                                                <p class="campaign-info-title__upper">Охват аудитории</p>
-                                                <p class="campaign-info-title__sub">36 592 339 чел</p>
-                                            </div>
-                                            <div class="campaign-info__img">
-                                                <img src="/img/images/people.svg" alt="">
-                                            </div>
-                                            <hr>
-                                            <div class="advice-slider">
-                                                <div class="advice-slide">
-                                                        <div class="advice-slide__title">
-                                                            <span class="advice-slide-icon">
-                                                                <svg class="info">
-                                                                    <use xlink:href="/img/sprite-sheet.svg#info"></use>
-                                                                </svg>
-                                                            </span>
-                                                            <span class="advice-slide__text">Совет!</span>
-                                                        </div>
-                                                        <div class="advice-slide__body">
-                                                            <p>Больше таргетов - точнее попадание в целевой сегмент, но меньше охват рекламной кампании.</p>
-                                                        </div>
-                                                </div>
-                                                <ul class="advice-slider__dots">
-                                                    <li class="advice-slider__dot"></li>
-                                                    <li class="advice-slider__dot advice-slider__dot--active"></li>
-                                                    <li class="advice-slider__dot"></li>
-                                                    <li class="advice-slider__dot"></li>
-                                                </ul>
+                                <div class="col-4 info-panel">
+                                    <div class="info">
+                                        <div class="info-panel-heading">
+                                            <span>Настройки</span>
+                                        </div>
+                                        <form class="form">
+                                          <div class="formfield">
+                                            <div class="grid">
+                                                <div class="col-12">
+                                                  <div class="label">
+                                                      <span class="label-txt">Как отправлять
+                                                        <span class="tip" data-tooltip="Выборка по режиму Гео-локации.">
+                                                            <svg>
+                                                                <use xlink:href="/img/sprite-sheet.svg#tip"></use>
+                                                            </svg>
+                                                        </span>
+                                                      </span>
+                                                  </div>
+                                                  <div class="select">
+                                                      <span class="selected-value">Выбрать из списка</span>
+                                                      <ul class="select-options">
+                                                          <li data-value="Гео-оффлайн" class="select-option">Гео-оффлайн</li>
+                                                          <li data-value="Гео-онлайн" class="select-option">Гео-онлайн</li>
+                                                      </ul>
+                                                      <div class="arrow">
+                                                          <svg class="arrow-icon">
+                                                          <use xlink:href="/img/sprite-sheet.svg#arrow-down"></use>
+                                                          </svg>
+                                                      </div>
+                                                  </div>
+                                              </div>
                                             </div>
                                         </div>
+                                        <div class="formfield">
+                                          <div class="grid">
+                                            <div class="col-12">
+                                              <div class="label">
+                                                  <span class="label-txt">Временной интервал
+                                                    <span class="tip" data-tooltip="Выборка по временному интервалу.">
+                                                        <svg>
+                                                            <use xlink:href="/img/sprite-sheet.svg#tip"></use>
+                                                        </svg>
+                                                    </span>
+                                                  </span>
+                                              </div>
+                                              <div class="select">
+                                                  <span class="selected-value">Выбрать из списка</span>
+                                                  <ul class="select-options">
+                                                      <li data-value="Утро" class="select-option">Утро</li>
+                                                      <li data-value="День" class="select-option">День</li>
+                                                      <li data-value="Вечер" class="select-option">Вечер</li>
+                                                  </ul>
+                                                  <div class="arrow">
+                                                      <svg class="arrow-icon">
+                                                      <use xlink:href="/img/sprite-sheet.svg#arrow-down"></use>
+                                                      </svg>
+                                                  </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <ol class="selected-addresses">
+                                          <div class="selected-addresses-heading">
+                                            <span>Выбранные адреса</span>
+                                          </div>
+                                          <div class="settings-empty">
+                                            <div class="settings-empty-icon">
+                                              <svg>
+                                                <use xlink:href="/img/sprite-sheet.svg#file"></use>
+                                              </svg>
+                                            </div>
+                                            <div class="settings-empty-txt">
+                                              <span>Нет выбранных адресов</span>
+                                            </div>
+                                          </div>
+                                        </ol>
+                                        <div class="next-step">
+                                          <div class="grid">
+                                            <div class="col-12">
+                                              <input type="submit" href="#" class="btn btn--bordered" value="Следующий шаг" />
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </form>
                                     </div>
                                 </div>
                             </div>
@@ -349,6 +309,8 @@
             </div>
         </div>
     </main>
+
+    <!-- END SETTINGS -->
 
     <!--FOOTER-->
 

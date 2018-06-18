@@ -117,9 +117,15 @@
 
                     <div class="col-3">
                         <ol class="campaign-nav">
+                            <li class="campaign-nav__item completed">
+                                <div class="campaign-nav__upper">
+                                    <span class="campaign-nav__txt">Даты рассылки</span>
+                                </div>
+                                <span class="campaign-nav__sub">23.05.18-25.06.18</span>
+                            </li>
                             <li class="campaign-nav__item campaign-nav__item active">
                                 <div class="campaign-nav__upper">
-                                    <span class="campaign-nav__txt campaign-nav__txt--active">Выбор аудитории</span>
+                                    <span class="campaign-nav__txt">Выбор аудитории</span>
                                     <svg class="campaign-nav__icon">
                                         <use xlink:href="/img/sprite-sheet.svg#arrow-down"></use>
                                     </svg>
@@ -210,9 +216,30 @@
                                             <form class="form" action="">
                                                 <div class="formfield">
                                                     <div class="grid">
+                                                        <div class="col-5">
+                                                            <div class="checkbox">
+                                                                <label>
+                                                                    <input type="checkbox" /> 
+                                                                    <span class="label-txt">Детальные настройки</span>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-7">
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="formfield">
+                                                    <div class="grid">
                                                         <div class="col-12">
                                                             <div class="label">
-                                                                <span class="label-txt">Адрес</span>
+                                                                <span class="label-txt">Точный адрес
+                                                                    <span class="tip" data-tooltip="Укажите точный адрес.">
+                                                                        <svg>
+                                                                            <use xlink:href="/img/sprite-sheet.svg#tip"></use>
+                                                                        </svg>
+                                                                    </span>
+                                                                </span>
                                                             </div>
                                                             <div class="text-input">
                                                                 <input type="text" value="Введите город">
@@ -222,7 +249,13 @@
                                                 </div>
                                                 <div class="formfield--inline">
                                                     <div class="label">
-                                                        <span class="label-txt">Радиус, км</span>
+                                                        <span class="label-txt">Радиус, км
+                                                            <span class="tip" data-tooltip="Выборка по временному интервалу.">
+                                                                <svg>
+                                                                    <use xlink:href="/img/sprite-sheet.svg#tip"></use>
+                                                                </svg>
+                                                            </span>
+                                                        </span>
                                                     </div>
                                                     <div class="grid">
                                                         <div class="col-6">
@@ -235,7 +268,7 @@
                                                         </div>    
                                                     </div>
                                                 </div>
-                                                <div class="drag-n-drop">
+                                                <!-- <div class="drag-n-drop">
                                                     <div class="grid">
                                                         <div class="col-12">
                                                             <div class="label">
@@ -255,14 +288,20 @@
                                                             </div>
                                                         </div>   
                                                     </div>
-                                                </div>
+                                                </div> -->
                                                 <div class="formfield">
                                                     <div class="grid-noGutter">
                                                         <div class="col-6">
                                                             <div class="grid">
                                                                 <div class="col-12">
                                                                     <div class="label">
-                                                                        <span class="label-txt">Как отправлять</span>
+                                                                        <span class="label-txt">Как отправлять
+                                                                            <span class="tip" data-tooltip="Выборка по временному интервалу.">
+                                                                                <svg>
+                                                                                    <use xlink:href="/img/sprite-sheet.svg#tip"></use>
+                                                                                </svg>
+                                                                            </span>
+                                                                        </span>
                                                                     </div>
                                                                 </div>
                                                                 <div class="col-12">
@@ -281,67 +320,18 @@
                                                                 </div>    
                                                             </div>
                                                         </div>
-                                                        <div class="col-6">
-                                                            <div class="grid">
-                                                                <div class="col-12">
-                                                                    <div class="label">
-                                                                        <span class="label-txt">Временной интервал</span>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-12">
-                                                                    <div class="select">
-                                                                        <ul class="select-options">
-                                                                            <li data-value="Утро" class="select-option selected">Утро</li>
-                                                                            <li data-value="День" class="select-option selected">День</li>
-                                                                            <li data-value="Вечер" class="select-option">Вечер</li>
-                                                                        </ul>
-                                                                        <div class="chip">
-                                                                            <span class="chip-txt">Утро</span>
-                                                                            <span class="chip-close">
-                                                                            <svg>
-                                                                                <use xlink:href="/img/sprite-sheet.svg#close"></use>
-                                                                            </svg>
-                                                                            </span>
-                                                                        </div>
-                                                                        <div class="chip">
-                                                                            <span class="chip-txt">День</span>
-                                                                            <span class="chip-close">
-                                                                                <svg>
-                                                                                <use xlink:href="/img/sprite-sheet.svg#close"></use>
-                                                                                </svg>
-                                                                            </span>
-                                                                        </div>
-                                                                        <div class="arrow">
-                                                                            <svg class="arrow-icon">
-                                                                            <use xlink:href="/img/sprite-sheet.svg#arrow-down"></use>
-                                                                            </svg>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>    
-                                                            </div>
-                                                        </div>
                                                     </div>
                                                 </div>
                                                 <div class="formfield">
-                                                    <div class="grid">
-                                                        <div class="col-12">
-                                                            <div class="label">
-                                                                <span class="label-txt">Период</span>
-                                                            </div>
-                                                            <div class="select">
-                                                                <span class="selected-value">Не имеет значения</span>
-                                                                <ul class="select-options">
-                                                                    <li data-value="Не имеет значения" class="select-option selected">Не имеет значения</li>
-                                                                    <li data-value="Сутки" class="select-option">Сутки</li>
-                                                                    <li data-value="Неделя" class="select-option">Неделя</li>
-                                                                    <li data-value="Месяц" class="select-option">Месяц</li>
-                                                                </ul>
-                                                                <div class="arrow">
-                                                                    <svg class="arrow-icon">
-                                                                    <use xlink:href="/img/sprite-sheet.svg#arrow-down"></use>
-                                                                    </svg>
-                                                                </div>
-                                                            </div>
+                                                    <div class="label">
+                                                        <span class="label-txt">Время пребывания в указанном месте</span>
+                                                    </div>
+                                                    <div class="button-tabs-container">
+                                                        <div class="button-tabs">
+                                                            <span class="button-tab left active">Утро</span>
+                                                            <span class="button-tab middle">День</span>
+                                                            <span class="button-tab middle">Вечер</span>
+                                                            <span class="button-tab right">Любое время</span>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -358,10 +348,23 @@
                                 </div>
                                 <div class="col-4 info-panel">
                                     <div class="info">
-                                        <div class="info-heading">
-                                            <span>Выбранные адреса</span>
-                                        </div>
                                         <ol class="selected-addresses">
+                                            <div class="selected-addresses-heading">
+                                                <span>Выбранные адреса</span>
+                                            </div>
+                                            <li class="selected-addresses__item">
+                                                <span class="selected-addresses__txt">
+                                                    ул. Щепкина 54, к.1
+                                                    <span class="selected-addresses__radius">
+                                                        Радиус 30 км
+                                                    </span>
+                                                </span>
+                                                <span class="selected-addresses__delete">
+                                                    <svg>
+                                                        <use xlink:href="/img/sprite-sheet.svg#close"></use>
+                                                    </svg>
+                                                </span>
+                                            </li>
                                             <li class="selected-addresses__item">
                                                 <span class="selected-addresses__txt">
                                                     ул. Щепкина 54, к.1
@@ -441,13 +444,24 @@
                                                 </span>
                                             </li>
                                         </ol>
-                                        <div class="more">
-                                            <a href="#" class="more__link">
-                                                Показать еще 9 
-                                                <svg class="more__icon">
-                                                    <use xlink:href="/img/sprite-sheet.svg#arrow-right"></use>
-                                                </svg>
-                                            </a>
+                                        <div class="section">
+                                            <div class="info-pagination">
+                                                <div class="arrow-left">
+                                                    <svg>
+                                                        <use xlink:href="/img/sprite-sheet.svg#arrow-left"></use>
+                                                    </svg>
+                                                </div>
+                                                <ul class="info-pagination-pages">
+                                                    <li class="info-pagination-page">1</li>
+                                                    <li class="info-pagination-page">2</li>
+                                                    <li class="info-pagination-page">3</li>
+                                                </ul>
+                                                <div class="arrow-right">
+                                                    <svg>
+                                                        <use xlink:href="/img/sprite-sheet.svg#arrow-right"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
                                         </div>
                                         <div class="clear">
                                             <span class="clear__icon">

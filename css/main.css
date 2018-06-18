@@ -210,13 +210,6 @@ span.heading-over {
   color: #999999;
   margin-left: 0.5rem;
 }
-.info-heading {
-  padding: 4rem 3.2rem 0 3.2rem;
-  font-size: 1.6rem;
-  font-weight: bold;
-  line-height: 1.5;
-  color: #808080;
-}
 .section {
   padding: 3.2rem;
 }
@@ -421,6 +414,7 @@ span.heading-over {
 }
 .clear {
   margin: 4rem 3.2rem;
+  text-align: center;
   cursor: pointer;
 }
 .clear__icon {
@@ -431,11 +425,11 @@ span.heading-over {
 .clear__icon svg {
   width: 10px;
   height: 10px;
-  fill: #808080;
+  fill: #ffffff;
 }
 .clear__txt {
   font-size: 1.4rem;
-  color: #808080;
+  color: #ffffff;
 }
 .settings {
   padding: 4.3rem 2.7rem 3.2rem 2.7rem;
@@ -445,7 +439,7 @@ span.heading-over {
 }
 .formfield {
   margin: 0 0 2.4rem 0;
-  max-width: 48rem;
+  max-width: 53.5rem;
 }
 .formfield.no-margin {
   margin: 0;
@@ -463,7 +457,7 @@ span.heading-over {
   padding-left: .5rem;
 }
 .formfield--inline {
-  max-width: 48rem;
+  max-width: 53.5rem;
   margin: 0 0 2.4rem 0;
 }
 .formfield--inline .label {
@@ -1048,9 +1042,9 @@ span.heading-over {
 }
 .button-tabs .button-tab.left {
   border-radius: 4px 0 0 4px;
+  border-right: none;
 }
 .button-tabs .button-tab.middle {
-  border-left: none;
   border-right: none;
 }
 .button-tabs .button-tab.right {
@@ -1062,50 +1056,19 @@ span.heading-over {
   border: 1px solid #E30613;
 }
 .map-container {
+  display: flex;
+  align-items: stretch;
   position: relative;
   width: 100%;
-  height: 596px;
+  height: 0;
+  padding-bottom: 102.5%;
 }
-.map-container .map {
+.map-container > iframe {
   position: absolute;
+  width: 100%;
+  height: 100%;
   top: 0;
-  bottom: 0;
   left: 0;
-  right: 0;
-}
-.map-container .map canvas {
-  top: 0 !important;
-  bottom: 0 !important;
-  left: 0 !important;
-  right: 0 !important;
-}
-.mapboxgl-ctrl-group {
-  border-radius: 0 !important;
-  box-shadow: none !important;
-}
-.mapboxgl-ctrl-zoom-in {
-  background: url(/img/icons/plus.svg) no-repeat !important;
-  background-size: 14px 14px !important;
-  background-position: 50% 50% !important;
-}
-.mapboxgl-ctrl-zoom-out {
-  background: url(/img/icons/minus.svg) no-repeat !important;
-  background-size: 14px 14px !important;
-  background-position: 50% 50% !important;
-}
-.mapboxgl-ctrl-fullscreen {
-  background: url(/img/icons/full-view-on.svg) no-repeat !important;
-  background-size: 24px 24px !important;
-  background-position: 50% 50% !important;
-  width: 48px !important;
-  height: 48px !important;
-}
-.mapboxgl-ctrl-shrink {
-  background: url(/img/icons/full-view-off.svg) no-repeat !important;
-  background-size: 24px 24px !important;
-  background-position: 50% 50% !important;
-  width: 48px !important;
-  height: 48px !important;
 }
 .file-specs-heading {
   font-size: 1.6rem;
@@ -1165,6 +1128,31 @@ span.heading-over {
   background-repeat: no-repeat;
   background-size: 180px 180px;
   opacity: .04;
+}
+.info-pagination {
+  display: flex;
+  justify-content: space-between;
+  color: #ffffff;
+}
+.info-pagination .arrow-left > svg,
+.info-pagination .arrow-right > svg {
+  fill: #ffffff;
+  width: 16px;
+  height: 16px;
+}
+.info-pagination-pages {
+  list-style-type: none;
+}
+.info-pagination-page {
+  display: inline-block;
+  background-color: #cccccc;
+  width: 24px;
+  height: 24px;
+  text-align: center;
+  vertical-align: middle;
+}
+.info-pagination-page:not(:last-child) {
+  margin-right: .5rem;
 }
 .header-component {
   background-color: #ffffff;
@@ -1430,8 +1418,8 @@ span.heading-over {
   position: relative;
   margin-left: 4rem;
   counter-increment: step-counter;
+  pointer-events: none;
   z-index: 2;
-  cursor: pointer;
 }
 .campaign-nav__item:not(:last-child) {
   margin-bottom: 5rem;
@@ -1457,6 +1445,8 @@ span.heading-over {
 }
 .campaign-nav__item.active .campaign-nav__icon {
   transform: rotate(-180deg);
+  pointer-events: initial;
+  cursor: pointer;
 }
 .campaign-nav__item.active .campaign-nav__txt {
   font-weight: bold;
@@ -1476,6 +1466,10 @@ span.heading-over {
   border: 2px solid #cc0511;
   background-color: #cc0511;
 }
+.campaign-nav__item.completed {
+  pointer-events: initial;
+  cursor: pointer;
+}
 .campaign-nav__item.completed .campaign-nav__icon {
   transform: rotate(0deg);
 }
@@ -1484,6 +1478,7 @@ span.heading-over {
 }
 .campaign-nav__item.completed .campaign-nav__sub {
   font-size: 1.4rem;
+  display: block;
 }
 .campaign-nav__item.completed:before {
   content: '';
@@ -1574,9 +1569,16 @@ span.heading-over {
   color: #333333;
 }
 .info-panel {
-  background-color: #ffffff;
+  background-color: #1a2d41;
   height: 50%;
   box-shadow: 0 11px 20px 0 rgba(234, 233, 235, 0.3);
+}
+.info-panel-heading {
+  padding: 4rem 3.2rem 0 3.2rem;
+  font-size: 1.6rem;
+  font-weight: bold;
+  line-height: 1.5;
+  color: #ffffff;
 }
 .info-panel .formfield {
   margin: 2.4rem 2.7rem;
@@ -1584,6 +1586,13 @@ span.heading-over {
 .info-panel .select-options {
   width: 100%;
   left: 0;
+}
+.info-panel .chip {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+}
+.info-panel .chip-close svg {
+  fill: #ffffff;
 }
 .info-panel .next-step {
   text-align: center;
@@ -1604,14 +1613,19 @@ span.heading-over {
   position: relative;
   z-index: 1;
 }
+.selected-addresses-heading {
+  color: #ffffff;
+  padding: 3.2rem 3.2rem 0 3.2rem;
+}
 .selected-addresses__item {
   max-height: 8rem;
   position: relative;
   display: flex;
   justify-content: space-between;
   padding: 2.4rem 3.2rem;
-  border-bottom: 1px solid #f8f8f8;
+  border-bottom: 2px solid rgba(248, 248, 248, 0.1);
   counter-increment: step-counter;
+  color: #ffffff;
 }
 .selected-addresses__item:before {
   position: absolute;
@@ -1621,8 +1635,9 @@ span.heading-over {
   content: counter(step-counter);
   width: 2rem;
   height: 2rem;
-  background-color: #E30613;
-  color: #ffffff;
+  background-color: #ffffff;
+  opacity: .3;
+  color: #1a2d41;
   font-size: 1rem;
   margin-right: 2rem;
   border-radius: 50px;
@@ -1647,6 +1662,24 @@ span.heading-over {
   width: 12px;
   height: 12px;
   fill: #cccccc;
+}
+.settings-empty {
+  text-align: center;
+  padding: 128px 0 152px 0;
+}
+.settings-empty-icon {
+  margin-bottom: 16px;
+}
+.settings-empty-icon svg {
+  fill: #ffffff;
+  width: 64px;
+  height: 64px;
+  opacity: .3;
+}
+.settings-empty-txt {
+  color: #ffffff;
+  font-size: 1.6rem;
+  opacity: .3;
 }
 .campaign-info {
   background-color: #1a2d41;

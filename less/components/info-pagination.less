@@ -1,0 +1,36 @@
+.info-pagination
+{
+  display: flex;
+  justify-content: space-between;
+  color: @whiteColor;
+
+  .arrow-left, .arrow-right
+  {
+    & > svg
+    {
+      fill: @whiteColor;
+      width: 16px;
+      height: 16px;
+    }
+  }
+
+  &-pages
+  {
+    list-style-type: none;
+  }
+
+  &-page
+  {
+    display: inline-block;
+    background-color: #cccccc;
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    vertical-align: middle;
+
+    &:not(:last-child)
+    {
+      margin-right: .5rem;
+    }
+  }
+}

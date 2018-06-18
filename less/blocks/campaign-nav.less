@@ -26,8 +26,8 @@
     position: relative;
     margin-left: 4rem;
     counter-increment: step-counter;
+    pointer-events: none;
     z-index: 2;
-    cursor: pointer;
     
     &:not(:last-child)
     {
@@ -59,6 +59,8 @@
     .campaign-nav__icon
     {
       transform: rotate(-180deg);
+      pointer-events: initial;
+      cursor: pointer;
     }
 
     .campaign-nav__txt
@@ -86,6 +88,9 @@
 
   &.completed
   {
+    pointer-events: initial;
+    cursor: pointer;
+
     .campaign-nav__icon
     {
       transform: rotate(0deg);
@@ -99,6 +104,7 @@
     .campaign-nav__sub
     {
       font-size: 1.4rem;
+      display: block;
     }
 
     &:before 
