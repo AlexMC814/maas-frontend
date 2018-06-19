@@ -100,7 +100,6 @@
   display: flex;
   align-items: center;
   position: relative;
-  max-width: 48rem;
   height: 4.8rem;
   padding: 8px;
   font-size: 1.6rem;
@@ -126,20 +125,20 @@
 
   .selected-value
     {
-      color: #b3b3b3;
+      color: #333333;
     }
 
   &-options
   {
     opacity: 0;
-    color: #b3b3b3;
+    color: #999999;
     visibility: hidden;
     z-index: -1;
     position: absolute;
     left: -1px;
     top: 4.5rem;
     background-color: #fff;
-    width: calc(100% + 1px);
+    width: calc(100% + 2px);
     list-style-type: none;
     box-shadow: @box-shadow-main;
     border: solid 0.5px #d0d6da;

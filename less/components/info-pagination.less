@@ -1,12 +1,17 @@
 .info-pagination
 {
   display: flex;
+  align-items: center;
   justify-content: space-between;
   color: @whiteColor;
 
   .arrow-left, .arrow-right
   {
-    & > svg
+
+    cursor: pointer;
+    opacity: .3;
+
+    svg
     {
       fill: @whiteColor;
       width: 16px;
@@ -16,21 +21,34 @@
 
   &-pages
   {
+    display: flex;
     list-style-type: none;
   }
 
   &-page
   {
-    display: inline-block;
-    background-color: #cccccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, .3);
     width: 24px;
     height: 24px;
     text-align: center;
+    font-size: 1.4rem;
     vertical-align: middle;
+    border-radius: 4px;
+    cursor: pointer;
+
+    &.active
+    {
+      background-color: rgba(255, 255, 255, .3);
+      border: none;
+    }
 
     &:not(:last-child)
     {
-      margin-right: .5rem;
+      margin-right: 1.6rem;
     }
   }
 }

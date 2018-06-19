@@ -211,21 +211,85 @@
                                             </div> 
                                         </div>
                                         <hr>
-                                        <!--OPTIONS-->
-                                        <div class="settings">
-                                            <form class="form" action="">
-                                                <div class="formfield">
+                                        <form class="form" action="">
+                                            <div class="section">
+                                                <div class="formfield margin-bottom-sm">
                                                     <div class="grid">
-                                                        <div class="col-5">
-                                                            <div class="checkbox">
-                                                                <label>
-                                                                    <input type="checkbox" /> 
-                                                                    <span class="label-txt">Детальные настройки</span>
-                                                                </label>
+                                                        <div class="col-12">
+                                                            <div class="label">
+                                                                <span class="label-txt">
+                                                                    Регион
+                                                                    <span class="tip" data-tooltip="Выборка по возрасту клиентов. Ваше сообщение увидят только клиенты, соответствующие выбранному возрасту.">
+                                                                        <svg>
+                                                                            <use xlink:href="/img/sprite-sheet.svg#tip"></use>
+                                                                        </svg>
+                                                                    </span>
+                                                                </span>
+                                                            </div>
+                                                            <div class="select">
+                                                                <span class="selected-value">Ханты-Мансийский автономный округ - Югра</span>
+                                                                <ul class="select-options">
+                                                                    <li data-value="Сутки" class="select-option selected">Ханты-Мансийский автономный округ - Югра</li>
+                                                                    <li data-value="Неделя" class="select-option">Ямало-Ненецкий автономный округ</li>
+                                                                </ul>
+                                                                <div class="arrow">
+                                                                    <svg class="arrow-icon">
+                                                                    <use xlink:href="/img/sprite-sheet.svg#arrow-down"></use>
+                                                                    </svg>
+                                                                </div>
                                                             </div>
                                                         </div>
-                                                        <div class="col-7">
-
+                                                    </div>
+                                                </div>
+                                                <div class="formfield no-margin-bottom">
+                                                    <div class="grid">
+                                                        <div class="col-12">
+                                                            <div class="label">
+                                                                <span class="label-txt">
+                                                                    Город
+                                                                    <span class="tip" data-tooltip="Выборка по возрасту клиентов. Ваше сообщение увидят только клиенты, соответствующие выбранному возрасту.">
+                                                                        <svg>
+                                                                            <use xlink:href="/img/sprite-sheet.svg#tip"></use>
+                                                                        </svg>
+                                                                    </span>
+                                                                </span>
+                                                            </div>
+                                                            <div class="select">
+                                                                <span class="selected-value">Михайловск (Ставропольский край)</span>
+                                                                <ul class="select-options">
+                                                                    <li data-value="Сутки" class="select-option selected">Михайловск (Ставропольский край)</li>
+                                                                    <li data-value="Неделя" class="select-option">Ставрополь (Ставропольский край)</li>
+                                                                    <li data-value="Месяц" class="select-option">Новохохловск (Ставропольский край)</li>
+                                                                </ul>
+                                                                <div class="arrow">
+                                                                    <svg class="arrow-icon">
+                                                                    <use xlink:href="/img/sprite-sheet.svg#arrow-down"></use>
+                                                                    </svg>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        <hr>
+                                        <!--OPTIONS-->
+                                        <div class="section">
+                                                <div class="formfield">
+                                                    <div class="grid">
+                                                        <div class="col-12">
+                                                            <div class="detail-settings">
+                                                                <div class="checkbox">
+                                                                    <label>
+                                                                        <input type="checkbox" checked /> 
+                                                                        <span class="label-txt">Детальные настройки</span>
+                                                                    </label>
+                                                                </div>
+                                                                <div class="detail-settings-arrow">
+                                                                    <svg>
+                                                                        <use xlink:href="/img/sprite-sheet.svg#arrow-down"></use>
+                                                                    </svg>
+                                                                </div>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -290,34 +354,29 @@
                                                     </div>
                                                 </div> -->
                                                 <div class="formfield">
-                                                    <div class="grid-noGutter">
+                                                    <div class="grid">
                                                         <div class="col-6">
-                                                            <div class="grid">
-                                                                <div class="col-12">
-                                                                    <div class="label">
-                                                                        <span class="label-txt">Как отправлять
-                                                                            <span class="tip" data-tooltip="Выборка по временному интервалу.">
-                                                                                <svg>
-                                                                                    <use xlink:href="/img/sprite-sheet.svg#tip"></use>
-                                                                                </svg>
-                                                                            </span>
-                                                                        </span>
-                                                                    </div>
+                                                            
+                                                            <div class="label">
+                                                                <span class="label-txt">Как отправлять
+                                                                    <span class="tip" data-tooltip="Выборка по временному интервалу.">
+                                                                        <svg>
+                                                                            <use xlink:href="/img/sprite-sheet.svg#tip"></use>
+                                                                        </svg>
+                                                                    </span>
+                                                                </span>
+                                                            </div>
+                                                            <div class="select">
+                                                                <span class="selected-value">ГЕО-оффлайн</span>
+                                                                <ul class="select-options">
+                                                                    <li data-value="ГЕО-оффлайн" class="select-option selected">ГЕО-оффлайн</li>
+                                                                    <li data-value="ГЕО-онлайн" class="select-option">ГЕО-онлайн</li>
+                                                                </ul>
+                                                                <div class="arrow">
+                                                                    <svg class="arrow-icon">
+                                                                    <use xlink:href="/img/sprite-sheet.svg#arrow-down"></use>
+                                                                    </svg>
                                                                 </div>
-                                                                <div class="col-12">
-                                                                    <div class="select">
-                                                                        <span class="selected-value">ГЕО-оффлайн</span>
-                                                                        <ul class="select-options">
-                                                                            <li data-value="ГЕО-оффлайн" class="select-option selected">ГЕО-оффлайн</li>
-                                                                            <li data-value="ГЕО-онлайн" class="select-option">ГЕО-онлайн</li>
-                                                                        </ul>
-                                                                        <div class="arrow">
-                                                                            <svg class="arrow-icon">
-                                                                            <use xlink:href="/img/sprite-sheet.svg#arrow-down"></use>
-                                                                            </svg>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>    
                                                             </div>
                                                         </div>
                                                     </div>
@@ -336,11 +395,7 @@
                                                     </div>
                                                 </div>
                                               <div class="next-step">
-                                                  <div class="grid">
-                                                      <div class="col-12">
-                                                          <input type="submit" href="#" class="btn btn--bordered" value="Следующий шаг" />
-                                                      </div>
-                                                  </div>
+                                                    <input type="submit" href="#" class="btn btn--bordered" value="Следующий шаг" />
                                               </div>
                                             </form>
                                         </div>
@@ -453,7 +508,7 @@
                                                 </div>
                                                 <ul class="info-pagination-pages">
                                                     <li class="info-pagination-page">1</li>
-                                                    <li class="info-pagination-page">2</li>
+                                                    <li class="info-pagination-page active">2</li>
                                                     <li class="info-pagination-page">3</li>
                                                 </ul>
                                                 <div class="arrow-right">

@@ -213,9 +213,6 @@ span.heading-over {
 .section {
   padding: 3.2rem;
 }
-.section .formfield {
-  margin: 0;
-}
 .section--no-bottom {
   padding: 3.2rem;
   padding-bottom: 0;
@@ -227,35 +224,35 @@ span.heading-over {
 .section .next-step {
   padding-top: 0 !important;
 }
-.margin-bottom--sm {
+.margin-bottom-sm {
   margin-bottom: 2.4rem !important;
 }
-.margin-bottom--mid {
+.margin-bottom-mid {
   margin-bottom: 3.2rem !important;
 }
-.margin-bottom--lg {
+.margin-bottom-lg {
   margin-bottom: 5rem !important;
 }
-.margin-top--sm {
+.margin-top-sm {
   margin-top: 2.4rem !important;
 }
-.margin-top--mid {
+.margin-top-mid {
   margin-top: 3.2rem !important;
 }
-.margin-top--lg {
+.margin-top-lg {
   margin-top: 5rem !important;
 }
 .no-margin-top {
-  margin-top: 0;
+  margin-top: 0 !important;
 }
 .no-margin-bottom {
-  margin-bottom: 0;
+  margin-bottom: 0 !important;
 }
 .no-margin-left {
-  margin-left: 0;
+  margin-left: 0 !important;
 }
 .no-margin-right {
-  margin-right: 0;
+  margin-right: 0 !important;
 }
 .gray {
   color: #808080;
@@ -499,7 +496,6 @@ span.heading-over {
   display: flex;
   align-items: center;
   position: relative;
-  max-width: 48rem;
   height: 4.8rem;
   padding: 8px;
   font-size: 1.6rem;
@@ -517,18 +513,18 @@ span.heading-over {
   z-index: 999;
 }
 .select .selected-value {
-  color: #b3b3b3;
+  color: #333333;
 }
 .select-options {
   opacity: 0;
-  color: #b3b3b3;
+  color: #999999;
   visibility: hidden;
   z-index: -1;
   position: absolute;
   left: -1px;
   top: 4.5rem;
   background-color: #fff;
-  width: calc(100% + 1px);
+  width: calc(100% + 2px);
   list-style-type: none;
   box-shadow: 0 18px 30px 0 rgba(128, 128, 128, 0.1);
   border: solid 0.5px #d0d6da;
@@ -1131,28 +1127,58 @@ span.heading-over {
 }
 .info-pagination {
   display: flex;
+  align-items: center;
   justify-content: space-between;
   color: #ffffff;
 }
-.info-pagination .arrow-left > svg,
-.info-pagination .arrow-right > svg {
+.info-pagination .arrow-left,
+.info-pagination .arrow-right {
+  cursor: pointer;
+  opacity: .3;
+}
+.info-pagination .arrow-left svg,
+.info-pagination .arrow-right svg {
   fill: #ffffff;
   width: 16px;
   height: 16px;
 }
 .info-pagination-pages {
+  display: flex;
   list-style-type: none;
 }
 .info-pagination-page {
-  display: inline-block;
-  background-color: #cccccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
   width: 24px;
   height: 24px;
   text-align: center;
+  font-size: 1.4rem;
   vertical-align: middle;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.info-pagination-page.active {
+  background-color: rgba(255, 255, 255, 0.3);
+  border: none;
 }
 .info-pagination-page:not(:last-child) {
-  margin-right: .5rem;
+  margin-right: 1.6rem;
+}
+.detail-settings {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.detail-settings input[type="checkbox"]:checked .detail-settings-arrow {
+  transform: rotate(-180deg);
+}
+.detail-settings-arrow svg {
+  width: 12px;
+  height: 12px;
+  fill: #cccccc;
 }
 .header-component {
   background-color: #ffffff;
@@ -1703,39 +1729,58 @@ span.heading-over {
   padding: 0 2.4rem;
   padding-bottom: 15rem;
 }
-.audience-settings {
-  background-color: #ffffff;
-  min-height: 100%;
+.campaign-top,
+.campaign-bottom {
+  padding: 3.2rem;
 }
-.audience-settings .segments {
+.campaign-bottom {
+  box-shadow: 0 -12px 30px 0 rgba(128, 128, 128, 0.1);
+}
+.campaign-scrolled {
+  max-height: 82vh;
+  overflow-y: scroll;
+}
+.campaign-settings-bg {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #ffffff;
+}
+.campaign-settings .segments {
   padding: 0 2.7rem;
 }
-.audience-settings .heading {
+.campaign-settings .heading {
   display: flex;
   align-items: center;
 }
-.audience-settings .heading .button-back {
+.campaign-settings .heading .button-back {
   height: 1.8rem;
   margin-right: 1rem;
 }
-.audience-settings .heading .button-back svg {
+.campaign-settings .heading .button-back svg {
   width: 1.8rem;
   height: 1.8rem;
 }
-.audience-settings .next-step {
+.campaign-settings .next-step {
   padding-top: 5rem;
 }
-.audience-settings .next-step input.btn {
+.campaign-settings .next-step input.btn {
   width: 240px;
   font-size: 1.6rem;
   cursor: pointer;
 }
-.audience-settings .manual-settings {
+.campaign-settings .manual-settings {
   padding-top: 5rem;
 }
-.audience-settings .manual-settings .btn {
+.campaign-settings .manual-settings .btn {
   font-size: 1.6rem;
   cursor: pointer;
+}
+.segments [class*=col-],
+.segments [class*=col_],
+.segments [class~=col] {
+  box-sizing: border-box;
+  padding: 1rem 1rem 1rem;
 }
 .audience-item {
   display: block;

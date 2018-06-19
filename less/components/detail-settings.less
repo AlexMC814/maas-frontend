@@ -1,0 +1,25 @@
+.detail-settings
+{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+
+  input[type="checkbox"]:checked
+  {
+    .detail-settings-arrow
+    {
+      transform: rotate(-180deg);
+    }
+  }
+
+  &-arrow
+  {
+    svg
+    {
+      width: 12px;
+      height: 12px;
+      fill: #cccccc;
+    }
+  }
+}

@@ -1,56 +1,95 @@
-.audience-settings {
+.campaign
+{
 
-  background-color: @whiteColor;
-  min-height: 100%;
-
-  .segments
+  &-top, 
+  &-bottom
   {
-    padding: 0 2.7rem;
+    padding: 3.2rem;
   }
 
-  .heading
+  &-bottom
   {
-    display: flex;
-    align-items: center;
-    
+    box-shadow: 0 -12px 30px 0 rgba(128, 128, 128, 0.1);
+  }
 
-    .button-back
+  &-scrolled
+  {
+    max-height: 82vh;
+    overflow-y: scroll;
+  }
+
+
+  &-settings 
+  {
+
+    &-bg
     {
-      height: 1.8rem;
-      margin-right: 1rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      background-color: @whiteColor;
+    }
 
-      svg
+    .segments
+    {
+      padding: 0 2.7rem;
+    }
+
+    .heading
+    {
+      display: flex;
+      align-items: center;
+      
+
+      .button-back
       {
-        width: 1.8rem;
         height: 1.8rem;
+        margin-right: 1rem;
+
+        svg
+        {
+          width: 1.8rem;
+          height: 1.8rem;
+        }
       }
     }
-  }
 
-  .next-step
-  {
-
-    padding-top: 5rem;
-
-    input.btn
+    .next-step
     {
-      width: 240px;
-      font-size: 1.6rem;
-      cursor: pointer;
-    }
-  }
 
-  .manual-settings
-  {
-    padding-top: 5rem;
+      padding-top: 5rem;
 
-    .btn
+      input.btn
       {
+        width: 240px;
         font-size: 1.6rem;
         cursor: pointer;
       }
+    }
+
+    .manual-settings
+    {
+      padding-top: 5rem;
+
+      .btn
+        {
+          font-size: 1.6rem;
+          cursor: pointer;
+        }
+    }
   }
 }
+.segments
+{
+  [class*=col-], 
+  [class*=col_], 
+  [class~=col] 
+  {
+    box-sizing: border-box;
+    padding: 1rem 1rem 1rem;
+  }
+}
+
 
 .audience-item {
 
