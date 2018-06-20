@@ -9,55 +9,13 @@
 
   &-bottom
   {
-    box-shadow: 0 -12px 30px 0 rgba(128, 128, 128, 0.1);
-  }
-
-  &-scrolled
-  {
-    max-height: 82vh;
-    overflow-y: scroll;
-  }
-
-
-  &-settings 
-  {
-
-    &-bg
+    &.shadow
     {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      background-color: @whiteColor;
-    }
-
-    .segments
-    {
-      padding: 0 2.7rem;
-    }
-
-    .heading
-    {
-      display: flex;
-      align-items: center;
-      
-
-      .button-back
-      {
-        height: 1.8rem;
-        margin-right: 1rem;
-
-        svg
-        {
-          width: 1.8rem;
-          height: 1.8rem;
-        }
-      }
+      box-shadow: 0 -12px 30px 0 rgba(128, 128, 128, 0.1);
     }
 
     .next-step
     {
-
-      padding-top: 5rem;
 
       input.btn
       {
@@ -69,13 +27,54 @@
 
     .manual-settings
     {
-      padding-top: 5rem;
-
       .btn
         {
           font-size: 1.6rem;
           cursor: pointer;
         }
+    }
+  }
+
+  &-scrolled
+  {
+    max-height: 79vh;
+    overflow-y: scroll;
+  }
+
+  &-bg
+  {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: @whiteColor;
+  }
+
+  &-heading
+  {
+    display: flex;
+    align-items: center;
+    
+
+    .button-back
+    {
+      height: 1.8rem;
+      margin-right: 1rem;
+
+      svg
+      {
+        width: 1.8rem;
+        height: 1.8rem;
+      }
+    }
+  }
+
+  &-settings 
+  {
+
+
+    .segments
+    {
+      padding: 0 2.7rem;
     }
   }
 }

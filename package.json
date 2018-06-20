@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "less": "less-watch-compiler",
-    "dev": "npm run serve"
+    "less": "less-watch-compiler"
   },
   "author": "Alex Musarov",
   "license": "ISC",

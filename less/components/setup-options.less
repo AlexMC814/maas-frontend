@@ -1,6 +1,6 @@
 .setup-option
 {
-
+  position: relative;
   padding: 2.4rem;
   background-color: @whiteColor;
   min-height: 100%;
@@ -47,22 +47,34 @@
     }
   }
 
-  &.locked
+  &:after
   {
-    position: relative;
-
-    &:after
-    {
-      content: '';
+    content: '';
       position: absolute;
       top: 40px;
       right: 40px;
       width: 180px;
       height: 180px;
-      background-image: url(/img/icons/locked.svg);
       background-repeat: no-repeat;
       background-size: 180px 180px;
       opacity: .04;
+  }
+
+  &.new-clients
+  {
+
+    &:after
+    {
+      background-image: url(/img/icons/megaphone.svg);
+    }
+  }
+
+  &.own-base
+  {
+
+    &:after
+    {
+      background-image: url(/img/icons/parents.svg);
     }
   }
 }

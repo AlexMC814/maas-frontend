@@ -179,194 +179,108 @@
 
                     <!--SETTINGS BODY-->
                     <div class="col">
-                        <div class="campaign-settings">
+                        <div class="campaign">
                             <div class="grid-noGutter">
-                                <div class="col-8">
-                                    <div class="audience-settings">
-                                        <div class="section">
-                                            <div class="heading">
+                                <div class="col-8 campaign-bg">
+                                    <!--OPTIONS-->
+                                    <div class="settings">
+                                        <div class="campaign-top">
+                                            <div class="campaign-heading">
                                                 <div class="button-back">
-                                                  <a href="">
+                                                    <a href="">
                                                     <svg>
-                                                      <use xlink:href="/img/sprite-sheet.svg#arrow-left"></use>
+                                                        <use xlink:href="/img/sprite-sheet.svg#arrow-left"></use>
                                                     </svg>
-                                                  </a>
+                                                    </a>
                                                 </div>
                                                 <h2 class="heading-2">Свой список контактов для рассылки</h2>  
                                             </div>
+                                            <div class="sub-heading padding-left no-margin-bottom">
+                                                <span>Если вы не хотите, чтобы ваши существующие клиенты получили сообщение, вы можете исключить их из рекламной кампании.
+                                                </span>
+                                            </div>
                                         </div>
-                                        <!--OPTIONS-->
-                                        <div class="">
-                                          <form class="form">
-                                            <div class="section">
-                                              <div class="drag-n-drop">
-                                                <div class="label">
-                                                    <span class="label-txt">Загрузите свою базу контактов</span>
-                                                </div>
-                                                <div class="drop-area big">
-                                                    <div class="message">
-                                                        <div class="icon">
-                                                            <svg>
-                                                                <use xlink:href="/img/sprite-sheet.svg#upload"></use>
-                                                            </svg>
-                                                        </div>
-                                                        <div class="txt">
-                                                            <span>Перетащите файл сюда<br> <span class="gray">или</span> <span class="red">выберите из папки</span></span>
-                                                        </div>
-                                                    </div>    
-                                                </div>  
-                                              </div>
-                                            </div>
-                                            <div class="section--no-top">
-                                              <div class="formfield">
-                                                <div class="slider-checkbox">
-                                                    <label for="enable-contacts">
-                                                        <input class="slider-checkbox-input" type="checkbox" id="enable-contacts" />
-                                                        <div class="slider-checkbox-line"></div>
-                                                        <span class="slider-checkbox-txt">Включить мои контакты в эту кампанию</a></span>
-                                                    </label>
-                                                  <!-- <label class="slider-checkbox-label" for="enable-contacts"></label> -->
-                                                </div>
-                                              </div>
-                                            </div>
-                                            <div class="section">
-                                                <div class="formfield">
-                                                    <div class="grid-noGutter">
-                                                        <div class="col-12">
-                                                            <div class="checkboxes">
-                                                                <div class="checkbox">
-                                                                    <label>
-                                                                        <input type="checkbox" checked /> 
-                                                                        <span class="label-txt">Отправляя контакты я принимаю  <a href="" class="legal-link">условия соглашения</a></span>
-                                                                    </label>
-                                                                </div>
+                                        <form class="form">
+                                            <div class="section no-padding-top">
+                                                <div class="drag-n-drop">
+                                                    <div class="label">
+                                                        <span class="label-txt">Загрузите свою базу контактов</span>
+                                                    </div>
+                                                    <div class="drop-area big">
+                                                        <div class="message">
+                                                            <div class="icon">
+                                                                <svg>
+                                                                    <use xlink:href="/img/sprite-sheet.svg#upload"></use>
+                                                                </svg>
                                                             </div>
-                                                        </div>
+                                                            <div class="txt">
+                                                                <span>Перетащите файл сюда<br> <span class="gray">или</span> <span class="red">выберите из папки</span></span>
+                                                            </div>
+                                                        </div>    
+                                                    </div>  
+                                                </div>
+                                            </div>
+                                            <div class="section">
+                                                <div class="file-specs">
+                                                    <div class="file-specs-heading">
+                                                    <span>Требования к файлу:</span>
+                                                    </div>
+                                                    <div class="file-specs-txt">
+                                                    <p class="file-specs-file">Формат файла: CSV или TXT</p>
+                                                    <p class="file-specs-number">Формат номера: 70000000000</p>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="section">
-                                              <div class="file-specs">
-                                                <div class="file-specs-heading">
-                                                  <span>Требования к файлу:</span>
-                                                </div>
-                                                <div class="file-specs-txt">
-                                                  <p class="file-specs-file">Формат файла: CSV или TXT</p>
-                                                  <p class="file-specs-number">Формат номера: 70000000000</p>
-                                                </div>
-                                              </div>
-                                            </div>
-                                            <div class="section">
-                                              <div class="next-step">
-                                                <input type="submit" href="#" class="btn btn--bordered" value="Следующий шаг" />
-                                              </div>
-                                            </div>
-                                          </form>
+                                        </form>
+                                    </div>
+                                    <div class="campaign-bottom">
+                                        <div class="next-step">
+                                            <input type="submit" href="#" class="btn btn--bordered" value="Следующий шаг" />
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-4 info-panel">
-                                    <div class="info">
-                                        <div class="info-heading">
-                                            <span>Выбранные адреса</span>
-                                        </div>
-                                        <ol class="selected-addresses">
-                                            <li class="selected-addresses__item">
-                                                <span class="selected-addresses__txt">
-                                                    ул. Щепкина 54, к.1
-                                                    <span class="selected-addresses__radius">
-                                                        Радиус 30 км
-                                                    </span>
-                                                </span>
-                                                <span class="selected-addresses__delete">
-                                                    <svg>
-                                                        <use xlink:href="/img/sprite-sheet.svg#close"></use>
-                                                    </svg>
-                                                </span>
-                                            </li>
-                                            <li class="selected-addresses__item">
-                                                <span class="selected-addresses__txt">
-                                                    ул. Щепкина 54, к.1
-                                                    <span class="selected-addresses__radius">
-                                                        Радиус 30 км
-                                                    </span>
-                                                </span>
-                                                <span class="selected-addresses__delete">
-                                                    <svg>
-                                                        <use xlink:href="/img/sprite-sheet.svg#close"></use>
-                                                    </svg>
-                                                </span>
-                                            </li>
-                                            <li class="selected-addresses__item">
-                                                <span class="selected-addresses__txt">
-                                                    ул. Щепкина 54, к.1
-                                                    <span class="selected-addresses__radius">
-                                                        Радиус 30 км
-                                                    </span>
-                                                </span>
-                                                <span class="selected-addresses__delete">
-                                                    <svg>
-                                                        <use xlink:href="/img/sprite-sheet.svg#close"></use>
-                                                    </svg>
-                                                </span>
-                                            </li>
-                                            <li class="selected-addresses__item">
-                                                <span class="selected-addresses__txt">
-                                                    ул. Щепкина 54, к.1
-                                                    <span class="selected-addresses__radius">
-                                                        Радиус 30 км
-                                                    </span>
-                                                </span>
-                                                <span class="selected-addresses__delete">
-                                                    <svg>
-                                                        <use xlink:href="/img/sprite-sheet.svg#close"></use>
-                                                    </svg>
-                                                </span>
-                                            </li>
-                                            <li class="selected-addresses__item">
-                                                <span class="selected-addresses__txt">
-                                                    ул. Щепкина 54, к.1
-                                                    <span class="selected-addresses__radius">
-                                                        Радиус 30 км
-                                                    </span>
-                                                </span>
-                                                <span class="selected-addresses__delete">
-                                                    <svg>
-                                                        <use xlink:href="/img/sprite-sheet.svg#close"></use>
-                                                    </svg>
-                                                </span>
-                                            </li>
-                                            <li class="selected-addresses__item">
-                                                <span class="selected-addresses__txt">
-                                                    ул. Щепкина 54, к.1
-                                                    <span class="selected-addresses__radius">
-                                                        Радиус 30 км
-                                                    </span>
-                                                </span>
-                                                <span class="selected-addresses__delete">
-                                                    <svg>
-                                                        <use xlink:href="/img/sprite-sheet.svg#close"></use>
-                                                    </svg>
-                                                </span>
-                                            </li>
-                                        </ol>
-                                        <div class="more">
-                                            <a href="#" class="more__link">
-                                                Показать еще 9 
-                                                <svg class="more__icon">
-                                                    <use xlink:href="/img/sprite-sheet.svg#arrow-right"></use>
-                                                </svg>
-                                            </a>
-                                        </div>
-                                        <div class="clear">
-                                            <span class="clear__icon">
-                                                <svg>
-                                                    <use xlink:href="/img/sprite-sheet.svg#close"></use>
-                                                </svg>
-                                            </span>
-                                            <span class="clear__txt">Очистить список</span>
-                                        </div>
-                                    </div>
+                                <div class="col-4">
+                                        <div class="campaign-info">
+                                                <div class="campaign-info__audience">
+                                                    <div class="campaign-info-title">
+                                                        <p class="campaign-info-title__upper">Охват аудитории</p>
+                                                        <p class="campaign-info-title__sub">36 592 339 чел</p>
+                                                    </div>
+                                                    <div class="campaign-info__img">
+                                                        <img src="/img/images/people.svg" alt="">
+                                                    </div>
+                                                    <div class="clear">
+                                                        <span class="clear__icon">
+                                                            <svg>
+                                                                <use xlink:href="/img/sprite-sheet.svg#close"></use>
+                                                            </svg>
+                                                        </span>
+                                                        <span class="clear__txt">Сбросить настройки</span>
+                                                    </div>
+                                                    <hr>
+                                                    <div class="advice-slider">
+                                                        <div class="advice-slide">
+                                                                <div class="advice-slide__title">
+                                                                    <span class="advice-slide-icon">
+                                                                        <svg class="info">
+                                                                            <use xlink:href="/img/sprite-sheet.svg#info"></use>
+                                                                        </svg>
+                                                                    </span>
+                                                                    <span class="advice-slide__text">Совет!</span>
+                                                                </div>
+                                                                <div class="advice-slide__body">
+                                                                    <p>Больше таргетов - точнее попадание в целевой сегмент, но меньше охват рекламной кампании.</p>
+                                                                </div>
+                                                        </div>
+                                                        <ul class="advice-slider__dots">
+                                                            <li class="advice-slider__dot"></li>
+                                                            <li class="advice-slider__dot advice-slider__dot--active"></li>
+                                                            <li class="advice-slider__dot"></li>
+                                                            <li class="advice-slider__dot"></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
                                 </div>
                             </div>
                         </div>

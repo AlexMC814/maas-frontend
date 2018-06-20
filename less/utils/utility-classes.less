@@ -2,13 +2,13 @@
 {
   padding: 3.2rem;
   
-  &--no-bottom
+  &.no-padding-bottom
   {
     padding: 3.2rem;
     padding-bottom: 0;
   }
 
-  &--no-top
+  &.no-padding-top
   {
     padding: 3.2rem;
     padding-top: 0;
@@ -83,6 +83,11 @@
 .gray
 {
   color: #808080;
+
+  & > svg
+  {
+    fill: #808080;
+  }
 }
 
 .red
@@ -97,7 +102,9 @@
 
 .legal-link
 {
+  display: inline-block;
   text-decoration: none;
+  margin-left: .3rem;
 }
 
 .currency-format

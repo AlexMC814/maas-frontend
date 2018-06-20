@@ -185,33 +185,34 @@
 
                     <!--SETTINGS BODY-->
                     <div class="col">
-                        <div class="campaign-settings">
+                        <div class="campaign">
                             <div class="grid-noGutter">
-                                <div class="col-8">
-                                    <div class="audience-settings">
-                                        <div class="section">
-                                            <div class="heading">
+                                <div class="col-8 campaign-bg">
+
+                                        <div class="campaign-top">
+                                            <div class="campaign-heading">
                                                 <div class="button-back">
-                                                  <a href="">
+                                                    <a href="">
                                                     <svg>
-                                                      <use xlink:href="/img/sprite-sheet.svg#arrow-left"></use>
+                                                        <use xlink:href="/img/sprite-sheet.svg#arrow-left"></use>
                                                     </svg>
-                                                  </a>
-                                                  </div>
-                                                  <h2 class="heading-2">Гео таргетинг</h2>  
+                                                    </a>
+                                                    </div>
+                                                    <h2 class="heading-2">Гео таргетинг</h2>  
                                             </div>
                                             <div class="sub-heading padding-left">
-                                              <span>
+                                                <span>
                                                 Вы можете выбрать собственные локальные зоны рассылки на карте с помощью инструментов ниже или ввести свои адреса вручную.
-                                              </span>
+                                                </span>
                                             </div>
                                             <div class="button-tabs">
-                                              <span class="button-tab left">Отметить на карте</span>
-                                              <span class="button-tab right active">Ввести вручную</span>
+                                                <span class="button-tab">Отметить на карте</span>
+                                                <span class="button-tab active">Ввести вручную</span>
                                             </div> 
                                         </div>
                                         <hr>
                                         <form class="form" action="">
+                                        <div class="settings">
                                             <div class="section">
                                                 <div class="formfield margin-bottom-sm">
                                                     <div class="grid">
@@ -271,261 +272,249 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                        <hr>
-                                        <!--OPTIONS-->
-                                        <div class="section">
-                                                <div class="formfield">
-                                                    <div class="grid">
-                                                        <div class="col-12">
-                                                            <div class="detail-settings">
-                                                                <div class="checkbox">
-                                                                    <label>
-                                                                        <input type="checkbox" checked /> 
-                                                                        <span class="label-txt">Детальные настройки</span>
-                                                                    </label>
+                                            <hr>
+                                                <!--OPTIONS-->
+                                                <div class="section no-padding-bottom">
+                                                    <div class="formfield">
+                                                        <div class="grid">
+                                                            <div class="col-12">
+                                                                <div class="detail-settings">
+                                                                    <div class="checkbox">
+                                                                        <label>
+                                                                            <input type="checkbox" checked /> 
+                                                                            <span class="label-txt">Детальные настройки</span>
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="detail-settings-arrow">
+                                                                        <svg>
+                                                                            <use xlink:href="/img/sprite-sheet.svg#arrow-down"></use>
+                                                                        </svg>
+                                                                    </div>
                                                                 </div>
-                                                                <div class="detail-settings-arrow">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="formfield">
+                                                        <div class="grid">
+                                                            <div class="col-12">
+                                                                <div class="label">
+                                                                    <span class="label-txt">Точный адрес
+                                                                        <span class="tip" data-tooltip="Укажите точный адрес.">
+                                                                            <svg>
+                                                                                <use xlink:href="/img/sprite-sheet.svg#tip"></use>
+                                                                            </svg>
+                                                                        </span>
+                                                                    </span>
+                                                                </div>
+                                                                <div class="text-input">
+                                                                    <input type="text" value="Введите город">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="formfield--inline">
+                                                        <div class="label">
+                                                            <span class="label-txt">Радиус, км
+                                                                <span class="tip" data-tooltip="Выборка по временному интервалу.">
                                                                     <svg>
-                                                                        <use xlink:href="/img/sprite-sheet.svg#arrow-down"></use>
+                                                                        <use xlink:href="/img/sprite-sheet.svg#tip"></use>
                                                                     </svg>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="formfield">
-                                                    <div class="grid">
-                                                        <div class="col-12">
-                                                            <div class="label">
-                                                                <span class="label-txt">Точный адрес
-                                                                    <span class="tip" data-tooltip="Укажите точный адрес.">
-                                                                        <svg>
-                                                                            <use xlink:href="/img/sprite-sheet.svg#tip"></use>
-                                                                        </svg>
-                                                                    </span>
                                                                 </span>
-                                                            </div>
-                                                            <div class="text-input">
-                                                                <input type="text" value="Введите город">
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="formfield--inline">
-                                                    <div class="label">
-                                                        <span class="label-txt">Радиус, км
-                                                            <span class="tip" data-tooltip="Выборка по временному интервалу.">
-                                                                <svg>
-                                                                    <use xlink:href="/img/sprite-sheet.svg#tip"></use>
-                                                                </svg>
                                                             </span>
-                                                        </span>
+                                                        </div>
+                                                        <div class="grid">
+                                                            <div class="col-6">
+                                                                <div class="text-input">
+                                                                    <input type="text" value="Введите адрес">
+                                                                </div>
+                                                            </div>    
+                                                            <div class="col-6">
+                                                                <a href="#" class="btn btn--bordered">+ Добавить</a>
+                                                            </div>    
+                                                        </div>
                                                     </div>
-                                                    <div class="grid">
-                                                        <div class="col-6">
-                                                            <div class="text-input">
-                                                                <input type="text" value="Введите адрес">
-                                                            </div>
-                                                        </div>    
-                                                        <div class="col-6">
-                                                            <a href="#" class="btn btn--bordered">+ Добавить</a>
-                                                        </div>    
-                                                    </div>
-                                                </div>
-                                                <!-- <div class="drag-n-drop">
-                                                    <div class="grid">
-                                                        <div class="col-12">
-                                                            <div class="label">
-                                                                <span class="label-txt">Добавить изображение (CSV или TXT, формат номера: +7 910 000 00 00)</span>
-                                                            </div>
-                                                            <div class="drop-area">
-                                                                <div class="message">
-                                                                    <div class="icon">
-                                                                        <svg>
-                                                                            <use xlink:href="/img/sprite-sheet.svg#upload"></use>
-                                                                        </svg>
-                                                                    </div>
-                                                                    <div class="txt">
-                                                                        <span>Перетащите файл сюда<br> <span class="gray" >или</span> <span class="red">выберите из папки</span></span>
-                                                                    </div>
-                                                                </div>    
-                                                            </div>
-                                                        </div>   
-                                                    </div>
-                                                </div> -->
-                                                <div class="formfield">
-                                                    <div class="grid">
-                                                        <div class="col-6">
-                                                            
-                                                            <div class="label">
-                                                                <span class="label-txt">Как отправлять
-                                                                    <span class="tip" data-tooltip="Выборка по временному интервалу.">
-                                                                        <svg>
-                                                                            <use xlink:href="/img/sprite-sheet.svg#tip"></use>
-                                                                        </svg>
+                                                    <div class="formfield">
+                                                        <div class="grid">
+                                                            <div class="col-6">
+                                                                
+                                                                <div class="label">
+                                                                    <span class="label-txt">Как отправлять
+                                                                        <span class="tip" data-tooltip="Выборка по временному интервалу.">
+                                                                            <svg>
+                                                                                <use xlink:href="/img/sprite-sheet.svg#tip"></use>
+                                                                            </svg>
+                                                                        </span>
                                                                     </span>
-                                                                </span>
+                                                                </div>
+                                                                <div class="select">
+                                                                    <span class="selected-value">ГЕО-оффлайн</span>
+                                                                    <ul class="select-options">
+                                                                        <li data-value="ГЕО-оффлайн" class="select-option selected">ГЕО-оффлайн</li>
+                                                                        <li data-value="ГЕО-онлайн" class="select-option">ГЕО-онлайн</li>
+                                                                    </ul>
+                                                                    <div class="arrow">
+                                                                        <svg class="arrow-icon">
+                                                                        <use xlink:href="/img/sprite-sheet.svg#arrow-down"></use>
+                                                                        </svg>
+                                                                    </div>
+                                                                </div>
                                                             </div>
-                                                            <div class="select">
-                                                                <span class="selected-value">ГЕО-оффлайн</span>
-                                                                <ul class="select-options">
-                                                                    <li data-value="ГЕО-оффлайн" class="select-option selected">ГЕО-оффлайн</li>
-                                                                    <li data-value="ГЕО-онлайн" class="select-option">ГЕО-онлайн</li>
-                                                                </ul>
-                                                                <div class="arrow">
-                                                                    <svg class="arrow-icon">
-                                                                    <use xlink:href="/img/sprite-sheet.svg#arrow-down"></use>
-                                                                    </svg>
+                                                        </div>
+                                                    </div>
+                                                    <div class="formfield">
+                                                        <div class="grid">
+                                                            <div class="col">
+                                                                <div class="label">
+                                                                    <span class="label-txt">Время пребывания в указанном месте</span>
+                                                                </div>
+                                                                <div class="button-tabs-container">
+                                                                    <div class="button-tabs">
+                                                                        <span class="button-tab left active">Утро</span>
+                                                                        <span class="button-tab middle">День</span>
+                                                                        <span class="button-tab middle">Вечер</span>
+                                                                        <span class="button-tab right">Любое</span>
+                                                                    </div>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="formfield">
-                                                    <div class="label">
-                                                        <span class="label-txt">Время пребывания в указанном месте</span>
-                                                    </div>
-                                                    <div class="button-tabs-container">
-                                                        <div class="button-tabs">
-                                                            <span class="button-tab left active">Утро</span>
-                                                            <span class="button-tab middle">День</span>
-                                                            <span class="button-tab middle">Вечер</span>
-                                                            <span class="button-tab right">Любое время</span>
+                                            </div>
+                                            <div class="campaign-bottom">
+                                                <div class="next-step">
+                                                    <div class="grid">
+                                                        <div class="col">
+                                                            <input type="submit" href="#" class="btn btn--bordered" value="Следующий шаг" />
                                                         </div>
                                                     </div>
                                                 </div>
-                                              <div class="next-step">
-                                                    <input type="submit" href="#" class="btn btn--bordered" value="Следующий шаг" />
-                                              </div>
-                                            </form>
-                                        </div>
-                                    </div>
+                                            </div>
+                                        </form>
                                 </div>
-                                <div class="col-4 info-panel">
-                                    <div class="info">
-                                        <ol class="selected-addresses">
-                                            <div class="selected-addresses-heading">
-                                                <span>Выбранные адреса</span>
-                                            </div>
-                                            <li class="selected-addresses__item">
-                                                <span class="selected-addresses__txt">
-                                                    ул. Щепкина 54, к.1
-                                                    <span class="selected-addresses__radius">
-                                                        Радиус 30 км
-                                                    </span>
-                                                </span>
-                                                <span class="selected-addresses__delete">
-                                                    <svg>
-                                                        <use xlink:href="/img/sprite-sheet.svg#close"></use>
-                                                    </svg>
-                                                </span>
-                                            </li>
-                                            <li class="selected-addresses__item">
-                                                <span class="selected-addresses__txt">
-                                                    ул. Щепкина 54, к.1
-                                                    <span class="selected-addresses__radius">
-                                                        Радиус 30 км
-                                                    </span>
-                                                </span>
-                                                <span class="selected-addresses__delete">
-                                                    <svg>
-                                                        <use xlink:href="/img/sprite-sheet.svg#close"></use>
-                                                    </svg>
-                                                </span>
-                                            </li>
-                                            <li class="selected-addresses__item">
-                                                <span class="selected-addresses__txt">
-                                                    ул. Щепкина 54, к.1
-                                                    <span class="selected-addresses__radius">
-                                                        Радиус 30 км
-                                                    </span>
-                                                </span>
-                                                <span class="selected-addresses__delete">
-                                                    <svg>
-                                                        <use xlink:href="/img/sprite-sheet.svg#close"></use>
-                                                    </svg>
-                                                </span>
-                                            </li>
-                                            <li class="selected-addresses__item">
-                                                <span class="selected-addresses__txt">
-                                                    ул. Щепкина 54, к.1
-                                                    <span class="selected-addresses__radius">
-                                                        Радиус 30 км
-                                                    </span>
-                                                </span>
-                                                <span class="selected-addresses__delete">
-                                                    <svg>
-                                                        <use xlink:href="/img/sprite-sheet.svg#close"></use>
-                                                    </svg>
-                                                </span>
-                                            </li>
-                                            <li class="selected-addresses__item">
-                                                <span class="selected-addresses__txt">
-                                                    ул. Щепкина 54, к.1
-                                                    <span class="selected-addresses__radius">
-                                                        Радиус 30 км
-                                                    </span>
-                                                </span>
-                                                <span class="selected-addresses__delete">
-                                                    <svg>
-                                                        <use xlink:href="/img/sprite-sheet.svg#close"></use>
-                                                    </svg>
-                                                </span>
-                                            </li>
-                                            <li class="selected-addresses__item">
-                                                <span class="selected-addresses__txt">
-                                                    ул. Щепкина 54, к.1
-                                                    <span class="selected-addresses__radius">
-                                                        Радиус 30 км
-                                                    </span>
-                                                </span>
-                                                <span class="selected-addresses__delete">
-                                                    <svg>
-                                                        <use xlink:href="/img/sprite-sheet.svg#close"></use>
-                                                    </svg>
-                                                </span>
-                                            </li>
-                                            <li class="selected-addresses__item">
-                                                <span class="selected-addresses__txt">
-                                                    ул. Щепкина 54, к.1
-                                                    <span class="selected-addresses__radius">
-                                                        Радиус 30 км
-                                                    </span>
-                                                </span>
-                                                <span class="selected-addresses__delete">
-                                                    <svg>
-                                                        <use xlink:href="/img/sprite-sheet.svg#close"></use>
-                                                    </svg>
-                                                </span>
-                                            </li>
-                                        </ol>
-                                        <div class="section">
-                                            <div class="info-pagination">
-                                                <div class="arrow-left">
-                                                    <svg>
-                                                        <use xlink:href="/img/sprite-sheet.svg#arrow-left"></use>
-                                                    </svg>
-                                                </div>
-                                                <ul class="info-pagination-pages">
-                                                    <li class="info-pagination-page">1</li>
-                                                    <li class="info-pagination-page active">2</li>
-                                                    <li class="info-pagination-page">3</li>
-                                                </ul>
-                                                <div class="arrow-right">
-                                                    <svg>
-                                                        <use xlink:href="/img/sprite-sheet.svg#arrow-right"></use>
-                                                    </svg>
-                                                </div>
-                                            </div>
+                            <div class="col-4 info-panel">
+                                <div class="info">
+                                    <ol class="selected-addresses">
+                                        <div class="selected-addresses-heading">
+                                            <span>Выбранные адреса</span>
                                         </div>
-                                        <div class="clear">
-                                            <span class="clear__icon">
+                                        <li class="selected-addresses__item">
+                                            <span class="selected-addresses__txt">
+                                                ул. Щепкина 54, к.1
+                                                <span class="selected-addresses__radius">
+                                                    Радиус 30 км
+                                                </span>
+                                            </span>
+                                            <span class="selected-addresses__delete">
                                                 <svg>
                                                     <use xlink:href="/img/sprite-sheet.svg#close"></use>
                                                 </svg>
                                             </span>
-                                            <span class="clear__txt">Очистить список</span>
+                                        </li>
+                                        <li class="selected-addresses__item">
+                                            <span class="selected-addresses__txt">
+                                                ул. Щепкина 54, к.1
+                                                <span class="selected-addresses__radius">
+                                                    Радиус 30 км
+                                                </span>
+                                            </span>
+                                            <span class="selected-addresses__delete">
+                                                <svg>
+                                                    <use xlink:href="/img/sprite-sheet.svg#close"></use>
+                                                </svg>
+                                            </span>
+                                        </li>
+                                        <li class="selected-addresses__item">
+                                            <span class="selected-addresses__txt">
+                                                ул. Щепкина 54, к.1
+                                                <span class="selected-addresses__radius">
+                                                    Радиус 30 км
+                                                </span>
+                                            </span>
+                                            <span class="selected-addresses__delete">
+                                                <svg>
+                                                    <use xlink:href="/img/sprite-sheet.svg#close"></use>
+                                                </svg>
+                                            </span>
+                                        </li>
+                                        <li class="selected-addresses__item">
+                                            <span class="selected-addresses__txt">
+                                                ул. Щепкина 54, к.1
+                                                <span class="selected-addresses__radius">
+                                                    Радиус 30 км
+                                                </span>
+                                            </span>
+                                            <span class="selected-addresses__delete">
+                                                <svg>
+                                                    <use xlink:href="/img/sprite-sheet.svg#close"></use>
+                                                </svg>
+                                            </span>
+                                        </li>
+                                        <li class="selected-addresses__item">
+                                            <span class="selected-addresses__txt">
+                                                ул. Щепкина 54, к.1
+                                                <span class="selected-addresses__radius">
+                                                    Радиус 30 км
+                                                </span>
+                                            </span>
+                                            <span class="selected-addresses__delete">
+                                                <svg>
+                                                    <use xlink:href="/img/sprite-sheet.svg#close"></use>
+                                                </svg>
+                                            </span>
+                                        </li>
+                                        <li class="selected-addresses__item">
+                                            <span class="selected-addresses__txt">
+                                                ул. Щепкина 54, к.1
+                                                <span class="selected-addresses__radius">
+                                                    Радиус 30 км
+                                                </span>
+                                            </span>
+                                            <span class="selected-addresses__delete">
+                                                <svg>
+                                                    <use xlink:href="/img/sprite-sheet.svg#close"></use>
+                                                </svg>
+                                            </span>
+                                        </li>
+                                        <li class="selected-addresses__item">
+                                            <span class="selected-addresses__txt">
+                                                ул. Щепкина 54, к.1
+                                                <span class="selected-addresses__radius">
+                                                    Радиус 30 км
+                                                </span>
+                                            </span>
+                                            <span class="selected-addresses__delete">
+                                                <svg>
+                                                    <use xlink:href="/img/sprite-sheet.svg#close"></use>
+                                                </svg>
+                                            </span>
+                                        </li>
+                                    </ol>
+                                    <div class="section">
+                                        <div class="info-pagination">
+                                            <div class="arrow-left">
+                                                <svg>
+                                                    <use xlink:href="/img/sprite-sheet.svg#arrow-left"></use>
+                                                </svg>
+                                            </div>
+                                            <ul class="info-pagination-pages">
+                                                <li class="info-pagination-page">1</li>
+                                                <li class="info-pagination-page active">2</li>
+                                                <li class="info-pagination-page">3</li>
+                                            </ul>
+                                            <div class="arrow-right">
+                                                <svg>
+                                                    <use xlink:href="/img/sprite-sheet.svg#arrow-right"></use>
+                                                </svg>
+                                            </div>
                                         </div>
+                                    </div>
+                                    <div class="clear center">
+                                        <span class="clear__icon">
+                                            <svg>
+                                                <use xlink:href="/img/sprite-sheet.svg#close"></use>
+                                            </svg>
+                                        </span>
+                                        <span class="clear__txt">Очистить список</span>
                                     </div>
                                 </div>
                             </div>
