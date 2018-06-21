@@ -1,0 +1,159 @@
+.datepicker 
+{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &-input-group
+  {
+    position: relative;
+  }
+
+  &-input
+  {
+    position: relative;
+    border: 1px solid #d0d6da;
+    border-radius: 4px;
+    width: 100%;
+  }
+
+  &-postfix
+  {
+    position: absolute;
+    top: 0;
+    right: 24px;
+    bottom: 0;
+    width: 22px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  &-icon
+  {
+    svg
+    {
+      width: 22px;
+      height: 22px;
+      fill: #d0d6da;
+    }
+  }
+
+  input
+  {
+    padding: 12px;
+    border: none;
+    background-color: @whiteColor;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 220px;
+
+    &:focus
+    {
+      outline: none;
+
+      & + .calendar-group
+      {
+        opacity: 1;
+        visibility: visible;
+        z-index: 999;
+      }
+    }
+  }
+
+}
+
+.calendar-group
+{
+  opacity: 0;
+  visibility: hidden;
+  z-index: -1;
+  position: absolute;
+  top: 55px;
+  left: 50px;
+  background-color: @whiteColor;
+  padding: 32px 19px;
+  box-shadow: 0 0 30px 0 rgba(128, 128, 128, 0.1);
+  font-size: 14px;
+  transition: @transition-primary;
+
+  .calendar-wrapper
+  {
+    position: relative;
+
+    &:before
+    {
+      content: '';
+      position: absolute;
+      display: block;
+      top: -40px;
+      left: 50%;
+      transform: translateX(-50%) rotate(40deg);
+      width: 20px;
+      height: 20px;
+      background-color:@whiteColor;
+    }
+  }
+}
+
+.month-selector
+{
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 3.2rem;
+
+  &-prev,
+  &-next
+  {
+
+    cursor: pointer;
+
+    svg
+    {
+      width: 12px;
+      height: 12px;
+    }
+  }
+
+  &-month
+  {
+    font-size: 2rem;
+  }
+
+}
+
+.calendar
+{
+  
+  &-date
+  {
+    cursor: pointer;
+  }
+
+  td
+  {
+    padding: 8px;
+  }
+
+  &-weekday
+  {
+    color: #cccccc;
+  }
+
+  .current
+  {
+    background-color: @color-primary;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    color: @whiteColor;
+  }
+
+
+  .next-month
+  {
+    color: #cccccc;
+  }
+}

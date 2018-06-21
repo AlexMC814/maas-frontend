@@ -162,22 +162,22 @@ select {
 }
 @font-face {
   font-family: "Corpid-Regular";
-  src: url("../fonts/corpid/CorpidE1SCd_Regular.eot");
-  src: url("../fonts/corpid/CorpidE1SCd_Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/corpid/CorpidE1SCd_Regular.woff") format("woff");
+  src: url("/assets/fonts/corpid/CorpidE1SCd_Regular.eot");
+  src: url("/assets/fonts/corpid/CorpidE1SCd_Regular.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/corpid/") format("woff");
   font-style: normal;
   font-weight: normal;
 }
 @font-face {
   font-family: "Corpid-Bold";
-  src: url("../fonts/corpid/CorpidE1SCd_Bold.eot");
-  src: url("../fonts/corpid/CorpidE1SCd_Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/corpid/CorpidE1SCd_Bold.woff") format("woff");
+  src: url("/assets/fonts/corpid/CorpidE1SCd_Bold.eot");
+  src: url("/assets/fonts/corpid/CorpidE1SCd_Bold.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/corpid/CorpidE1SCd_Bold.woff") format("woff");
   font-style: normal;
   font-weight: 700;
 }
 @font-face {
   font-family: "Corpid-Light";
-  src: url("../fonts/corpid/CorpidE1SCd_Light.eot");
-  src: url("../fonts/corpid/CorpidE1SCd_Light.eot?#iefix") format("embedded-opentype"), url("../fonts/corpid/CorpidE1SCd_Light.woff") format("woff");
+  src: url("/assets/fonts/corpid/CorpidE1SCd_Light.eot");
+  src: url("/assets/fonts/corpid/CorpidE1SCd_Light.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/corpid/CorpidE1SCd_Light.woff") format("woff");
   font-style: normal;
   font-weight: 200;
 }
@@ -214,15 +214,19 @@ span.heading-over {
   padding: 3.2rem;
 }
 .section.no-padding-bottom {
-  padding: 3.2rem;
   padding-bottom: 0;
 }
 .section.no-padding-top {
-  padding: 3.2rem;
   padding-top: 0;
 }
 .section .next-step {
   padding-top: 0 !important;
+}
+.section [class*=col-],
+.section [class*=col_],
+.section [class~=col] {
+  box-sizing: border-box;
+  padding: 0 1rem 0;
 }
 .margin-bottom-sm {
   margin-bottom: 2.4rem !important;
@@ -443,39 +447,12 @@ span.heading-over {
 .formfield.no-margin {
   margin: 0;
 }
-.formfield--range {
-  max-width: 50rem;
-  margin-bottom: 7rem;
-}
-.formfield--range .label {
-  display: inline-block;
-  color: #999999;
-  font-size: 1.4rem;
-  position: relative;
-  margin-bottom: 1rem;
-  padding-left: .5rem;
-}
-.formfield--range .label-txt {
-  display: flex;
-  align-items: center;
-}
-.formfield--inline {
-  max-width: 53.5rem;
-  margin: 0 0 2.4rem 0;
-}
-.formfield--inline .label {
-  display: inline-block;
-  color: #999999;
-  font-size: 1.4rem;
-  position: relative;
-  margin-bottom: 1rem;
-  padding-left: .5rem;
-}
-.formfield--inline .btn {
-  height: 4.8rem;
-  width: 100%;
-  font-size: 1.6rem;
-  padding: 1.5rem;
+.formfield .datepicker-separator {
+  display: block;
+  width: 16px;
+  height: 2px;
+  background-color: #b3b3b3;
+  margin-top: 25px;
 }
 .formfield .label {
   display: inline-block;
@@ -497,6 +474,121 @@ span.heading-over {
 }
 .formfield .button-tabs .button-tab {
   color: #999999;
+}
+.formfield--inline {
+  max-width: 53.5rem;
+  margin: 0 0 2.4rem 0;
+}
+.formfield--inline .label {
+  display: inline-block;
+  color: #999999;
+  font-size: 1.4rem;
+  position: relative;
+  margin-bottom: 1rem;
+  padding-left: .5rem;
+}
+.formfield--inline .btn {
+  height: 4.8rem;
+  width: 100%;
+  font-size: 1.6rem;
+  padding: 1.5rem;
+}
+.formfield--range {
+  max-width: 50rem;
+  margin-bottom: 7rem;
+}
+.formfield--range .label {
+  display: inline-block;
+  color: #999999;
+  font-size: 1.4rem;
+  position: relative;
+  margin-bottom: 1rem;
+  padding-left: .5rem;
+}
+.formfield--range .label-txt {
+  display: flex;
+  align-items: center;
+}
+.checkboxes.inline {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.checkbox label {
+  cursor: pointer;
+}
+.checkbox .label-txt {
+  font-size: 1.4rem;
+  vertical-align: middle;
+}
+.checkbox input[type="checkbox"] {
+  display: none;
+}
+.checkbox input[type="checkbox"] + .label-txt:before {
+  content: '';
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: middle;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #cccccc;
+  border-radius: 2px;
+  margin-right: 1rem;
+}
+.checkbox input[type="checkbox"]:checked + .label-txt:before {
+  content: '';
+  width: 16px;
+  height: 16px;
+  background: url(/assets/img/icons/checkbox.svg) no-repeat;
+  background-size: 16px 16px;
+  border: none;
+}
+.slider-checkbox {
+  display: block;
+  align-items: center;
+  position: relative;
+  width: 40px;
+  height: 16px;
+}
+.slider-checkbox label {
+  cursor: pointer;
+}
+.slider-checkbox input {
+  display: none;
+}
+.slider-checkbox input:checked + .slider-checkbox-line {
+  background-color: #cc0511;
+}
+.slider-checkbox input:checked + .slider-checkbox-line:after {
+  transform: translateX(20px);
+}
+.slider-checkbox-line {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(227, 6, 19, 0.1);
+  border-radius: 20px;
+  transition: all 0.3s ease-in;
+}
+.slider-checkbox-line:after {
+  content: '';
+  position: absolute;
+  box-sizing: border-box;
+  top: -4px;
+  width: 24px;
+  height: 24px;
+  border: 6px solid #cc0511;
+  border-radius: 50px;
+  background-color: #ffffff;
+  transition: all 0.3s ease-in;
+}
+.slider-checkbox-txt {
+  position: absolute;
+  width: 400px;
+  top: 0;
+  margin-left: 50px;
 }
 .select {
   display: flex;
@@ -553,7 +645,7 @@ span.heading-over {
   top: 50%;
   transform: translateY(-50%);
   display: inline-block;
-  background: url(/img/icons/checked-red.svg);
+  background: url(/assets/img/icons/checked-red.svg);
   background-size: 14px 14px;
   width: 14px;
   height: 14px;
@@ -597,6 +689,16 @@ span.heading-over {
   width: 1.8rem;
   height: 1.8rem;
   fill: #cccccc;
+}
+.text-input input {
+  height: 4.8rem;
+  outline: none;
+  border: 1px solid #d0d6da;
+  border-radius: 4px;
+  padding: 1.1rem;
+  font-size: 1.6rem;
+  width: 100%;
+  color: #b3b3b3;
 }
 .range {
   background: #f8f8f8;
@@ -701,15 +803,60 @@ span.heading-over {
 .range .high-income {
   right: 0%;
 }
-.text-input input {
-  height: 4.8rem;
-  outline: none;
-  border: 1px solid #d0d6da;
+.tip {
+  position: relative;
+  margin-left: 5px;
+  width: 14px;
+  height: 14px;
+  vertical-align: middle;
+}
+.tip > svg {
+  width: 14px;
+  height: 14px;
+  fill: #999999;
+}
+[data-tooltip]:before,
+[data-tooltip]:after {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  -webkit-font-smoothing: antialiased;
+  margin: 0 auto;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 9;
+  transition: 0.6s ease-in-out 0.4s;
+}
+[data-tooltip]:before {
+  content: "";
+  height: 0;
+  width: 0;
+  left: calc(100% + 13px);
+  border-style: solid;
+  border-width: 8px;
+  border-color: transparent #1a2d41 transparent transparent;
+}
+[data-tooltip]:after {
+  content: attr(data-tooltip);
+  background: #1a2d41;
+  min-height: 80px;
+  padding: 13px;
+  min-width: 21rem;
+  max-width: 21rem;
+  font-size: 10px;
+  box-sizing: border-box;
+  top: calc(100% - 45px);
+  left: calc(100% + 125px);
+  color: #fff;
+  line-height: 16px;
   border-radius: 4px;
-  padding: 1.1rem;
-  font-size: 1.6rem;
-  width: 100%;
-  color: #b3b3b3;
+  text-shadow: 0px 1px 1px #1a2d41;
+}
+[data-tooltip]:hover:before,
+[data-tooltip]:hover:after {
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
 }
 .drag-n-drop {
   margin: 0 0 2.4rem 0;
@@ -727,7 +874,6 @@ span.heading-over {
   align-items: center;
   height: 12rem;
   border: 2px dashed #cccccc;
-  cursor: pointer;
 }
 .drag-n-drop .drop-area.big {
   height: 24rem;
@@ -748,87 +894,6 @@ span.heading-over {
   fill: #cc0511;
   width: 4rem;
   height: 4rem;
-}
-.checkboxes.inline {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.checkbox label {
-  cursor: pointer;
-}
-.checkbox .label-txt {
-  font-size: 1.4rem;
-  vertical-align: middle;
-}
-.checkbox input[type="checkbox"] {
-  display: none;
-}
-.checkbox input[type="checkbox"] + .label-txt:before {
-  content: '';
-  box-sizing: border-box;
-  display: inline-block;
-  vertical-align: middle;
-  width: 16px;
-  height: 16px;
-  border: 2px solid #cccccc;
-  border-radius: 2px;
-  margin-right: 1rem;
-}
-.checkbox input[type="checkbox"]:checked + .label-txt:before {
-  content: '';
-  width: 16px;
-  height: 16px;
-  background: url(/img/icons/checkbox.svg) no-repeat;
-  background-size: 16px 16px;
-  border: none;
-}
-.slider-checkbox {
-  display: block;
-  align-items: center;
-  position: relative;
-  width: 40px;
-  height: 16px;
-}
-.slider-checkbox label {
-  cursor: pointer;
-}
-.slider-checkbox input {
-  display: none;
-}
-.slider-checkbox input:checked + .slider-checkbox-line {
-  background-color: #cc0511;
-}
-.slider-checkbox input:checked + .slider-checkbox-line:after {
-  transform: translateX(20px);
-}
-.slider-checkbox-line {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-color: rgba(227, 6, 19, 0.1);
-  border-radius: 20px;
-  transition: all 0.3s ease-in;
-}
-.slider-checkbox-line:after {
-  content: '';
-  position: absolute;
-  box-sizing: border-box;
-  top: -4px;
-  width: 24px;
-  height: 24px;
-  border: 6px solid #cc0511;
-  border-radius: 50px;
-  background-color: #ffffff;
-  transition: all 0.3s ease-in;
-}
-.slider-checkbox-txt {
-  position: absolute;
-  width: 400px;
-  top: 0;
-  margin-left: 50px;
 }
 .datepicker {
   display: flex;
@@ -858,13 +923,6 @@ span.heading-over {
   width: 22px;
   height: 22px;
   fill: #d0d6da;
-}
-.datepicker-separator {
-  display: block;
-  width: 16px;
-  height: 2px;
-  background-color: #b3b3b3;
-  margin-top: 25px;
 }
 .datepicker input {
   padding: 12px;
@@ -945,61 +1003,6 @@ span.heading-over {
 }
 .calendar .next-month {
   color: #cccccc;
-}
-.tip {
-  position: relative;
-  margin-left: 5px;
-  width: 14px;
-  height: 14px;
-  vertical-align: middle;
-}
-.tip > svg {
-  width: 14px;
-  height: 14px;
-  fill: #999999;
-}
-[data-tooltip]:before,
-[data-tooltip]:after {
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%);
-  -webkit-font-smoothing: antialiased;
-  margin: 0 auto;
-  opacity: 0;
-  visibility: hidden;
-  z-index: 9;
-  transition: 0.6s ease-in-out 0.4s;
-}
-[data-tooltip]:before {
-  content: "";
-  height: 0;
-  width: 0;
-  left: calc(100% + 13px);
-  border-style: solid;
-  border-width: 8px;
-  border-color: transparent #1a2d41 transparent transparent;
-}
-[data-tooltip]:after {
-  content: attr(data-tooltip);
-  background: #1a2d41;
-  min-height: 80px;
-  padding: 13px;
-  min-width: 21rem;
-  max-width: 21rem;
-  font-size: 10px;
-  box-sizing: border-box;
-  top: calc(100% - 45px);
-  left: calc(100% + 125px);
-  color: #fff;
-  line-height: 16px;
-  border-radius: 4px;
-  text-shadow: 0px 1px 1px #1a2d41;
-}
-[data-tooltip]:hover:before,
-[data-tooltip]:hover:after {
-  opacity: 1;
-  visibility: visible;
-  transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
 }
 .button-tabs {
   display: flex;
@@ -1166,6 +1169,45 @@ span.heading-over {
   width: 12px;
   height: 12px;
   fill: #cccccc;
+}
+.campaign-plan {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid #f2f2f2;
+  padding: .9rem 1.4rem;
+  height: 16rem;
+  cursor: pointer;
+}
+.campaign-plan-name {
+  font-size: 1.4rem;
+  color: #d0d6da;
+  margin-bottom: 1rem;
+}
+.campaign-plan-audience {
+  font-size: 1.8rem;
+  line-height: 1.33;
+}
+.campaign-plan-economy {
+  font-size: 1.2rem;
+  font-family: 'Corpid-Bold', sans-serif;
+}
+.campaign-plan-price {
+  font-size: 1.6rem;
+  color: #38384a;
+}
+.campaign-plan-price svg {
+  fill: #38384a;
+}
+.campaign-plan.selected {
+  background-color: #E30613;
+  color: #ffffff;
+}
+.campaign-plan.selected .campaign-plan-price {
+  color: #ffffff;
+}
+.campaign-plan.selected .campaign-plan-price svg {
+  fill: #ffffff;
 }
 ::-webkit-scrollbar {
   width: 4px;
@@ -1506,7 +1548,7 @@ span.heading-over {
   justify-content: center;
   align-items: center;
   position: absolute;
-  background: url(/img/icons/checked.svg);
+  background: url(/assets/img/icons/checked.svg);
   background-size: 2.4rem 2.4rem;
   top: -5px;
   left: -35px;
@@ -1557,7 +1599,7 @@ span.heading-over {
 .campaign-nav .campaign-sub-menu__item.completed:before {
   content: '';
   display: inline-block;
-  background-image: url(/img/icons/checked.svg);
+  background-image: url(/assets/img/icons/checked.svg);
   background-size: 12px 12px;
   background-color: transparent;
   background-repeat: no-repeat;
@@ -1703,21 +1745,11 @@ span.heading-over {
   opacity: .3;
 }
 .campaign-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   background-color: #1a2d41;
   color: #ffffff;
-}
-.campaign-info-title {
-  margin-bottom: 3rem;
-  padding: 4.3rem 2.4rem 0 2.4rem;
-}
-.campaign-info-title__upper {
-  font-size: 1.2rem;
-  font-weight: 700;
-  line-height: 1.6rem;
-}
-.campaign-info-title__sub {
-  font-size: 3.2rem;
-  line-height: 3.6rem;
 }
 .campaign-info__img {
   text-align: center;
@@ -1726,6 +1758,69 @@ span.heading-over {
 }
 .campaign-info .select .selected-value {
   color: #f8f8f8;
+}
+.campaign-audience-title {
+  margin-bottom: 3rem;
+}
+.campaign-audience-title--upper {
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 1.6rem;
+  opacity: .3;
+}
+.campaign-audience-title--sub {
+  font-size: 3.2rem;
+  line-height: 3.6rem;
+}
+.campaign-tarif {
+  display: flex;
+}
+.campaign-tarif-icon {
+  margin-right: 14px;
+}
+.campaign-tarif-icon > svg {
+  width: 24px;
+  height: 24px;
+  fill: #ffffff;
+  opacity: .3;
+}
+.campaign-tarif-info {
+  display: inline-block;
+  margin-bottom: 4px;
+}
+.campaign-tarif-sms-price {
+  display: flex;
+  align-items: center;
+}
+.campaign-tarif-sms-price > svg {
+  fill: #ffffff;
+  width: 14px;
+  height: 14px;
+}
+.campaign-price {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.campaign-price-heading {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  opacity: .3;
+}
+.campaign-price-sum {
+  display: flex;
+  align-items: center;
+  font-size: 4.2rem;
+  line-height: 3.6rem;
+}
+.campaign-price-currency {
+  width: 4.2rem;
+  height: 4.2rem;
+}
+.campaign-price-currency svg {
+  fill: #ffffff;
+  width: 4rem;
+  height: 4rem;
 }
 .campaign-top,
 .campaign-bottom {

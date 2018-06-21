@@ -1,0 +1,146 @@
+.range 
+{
+  background: #f8f8f8;
+  font-size: 0;
+  height: 8px;
+  margin: 11px 0;
+  width: 100%;
+  padding: 0 0;
+  border-radius: 3.5px;
+
+  .offset 
+  {
+    position: relative;
+    height: 102%;
+  }
+
+  .dot
+  {
+    position: absolute;
+    z-index: 1;
+    top: -4px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50px;
+    background-color: #f8f8f8;
+  }
+
+  .progress
+  {
+    height: 100%;
+    background-color: @color-primary;
+    border-radius: 3.5px;
+  }
+
+  .center, 
+  .progress
+  {
+    position: relative;
+    z-index: 2;
+  }
+
+  .center 
+  {
+    position: absolute;
+    top: -7px;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    border: 5px solid @color-primary;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+    .left-label,
+    .right-label
+    {
+      position: absolute;
+      top: 20px;
+      font-size: 1.4rem;
+      color: #999999;
+      margin-bottom: 1.8rem;
+    }
+
+    .left-label
+    {
+      left: 0;
+    }
+
+    .right-label
+    {
+      right:0;
+    }
+  
+  &--age
+  {
+    .min-value,
+    .max-value
+    { 
+      position: absolute;
+      font-size: 1.4rem;
+      top: 15px;
+      white-space: nowrap;
+      margin-top: 1.7em;
+      font-weight: bold;
+      text-align: center;
+      width: 40px;
+    }
+
+    .min-value
+    {
+      left: -15px;
+      
+    }
+
+    .max-value
+    {
+      right: -15px;
+    }
+  }
+
+  .point-labels
+  {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    line-height: 1.14;
+  }
+
+  .point-label
+  {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    width: auto;
+    font-size: 1.4rem;
+    color: #999999;
+    white-space: nowrap;
+  }
+
+  .middle-income
+  {
+    
+    left: 33.3333%;
+    transform: translateX(-50%);  
+  }
+
+  .upper-middle-income
+  {
+    
+    left: 66.6667%;
+    transform: translateX(-25%);  
+  }
+
+  .high-income
+  {
+    
+    right: 0%;  
+  }
+
+
+
+}

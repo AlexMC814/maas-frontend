@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>МТС | Маркетолог</title>
+</head>
+
+<body>
+
+    <!--HEADER-->
+
+    <div class="header-component" id="header">
+        <div class="container">
+            <div class="header-wrapper">
+                <div class="header-left">
+                    <div class="logo">
+                        <svg>
+                            <use xlink:href="assets/img/sprite-sheet.svg#logo"></use>
+                        </svg>
+                    </div>
+                    <ul class="tabs">
+                        <li class="tab tab--active">
+                            <a href="#">Мои кампании</a>
+                        </li>
+                        <li class="tab">
+                            <a href="#">Шаблоны</a>
+                        </li>
+                        <li class="tab tab--dropdown">
+                            <a href="#/campaign/new/new/1">Создать кампанию</a>
+                            <ul class="dropdown">
+                                <li class="dropdown-item">
+                                    <a href="#/campaign/new/new/1">Поиск новых клиентов</a>   
+                                </li>
+                                <li class="dropdown-item">
+                                    <a href="#">Работа с вашей базой</a>   
+                                </li>
+                                <li class="dropdown-item">
+                                    <a href="#">МТС Кэшбэк</a>   
+                                </li>
+                                <li class="dropdown-item">
+                                    <a href="#">Programmatic</a>   
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="tab">
+                            <a href="/assets/docs/FAQ.pdf" target="_blank">FAQ</a>
+                        </li>
+                        <div class="underline-area">
+                            <div class="underline"></div>
+                        </div>
+                    </ul>
+                </div>
+                <div class="header-right">
+                    <div class="msisdn-block">
+                        <a href="">
+                            <span class="wallet">
+                                <svg class="wallet-icon">
+                                    <use xlink:href="assets/img/sprite-sheet.svg#wallet"></use>
+                                </svg>
+                            </span>
+                            <span class="sum">32 486</span>
+                            <span class="currency-format">
+                                <svg>
+                                    <use xlink:href="assets/img/sprite-sheet.svg#rubles"></use>
+                                </svg>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="lc">
+                        <span class="all-products">
+                            <a href="#" class="all-products-link">
+                                <svg class="all-products-icon">
+                                    <use xlink:href="assets/img/sprite-sheet.svg#grid"></use>
+                                </svg>
+                            </a>
+                        </span>
+                        <span class="notifications">
+                            <a href="#" class="notifications-link">
+                                <svg class="notifications-icon">
+                                    <use xlink:href="assets/img/sprite-sheet.svg#bell"></use>
+                                </svg>
+                            </a>
+                        </span>
+                        <span class="profile">
+                            <a href="#" class="profile-link">
+                                <img class="profile-icon" src="assets/img/images/foto.png" alt="Ваш профиль">
+                            </a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    </div>
+    <!-- END HEADER -->
+
+    <!--MAIN BODY-->
+
+    <main class="main-body">
+        <div class="container">
+
+            <!--CAMPAIGN -->
+
+            <div class="new-campaign">
+                <span class="heading-over">Поиск новых клиентов</span>
+                <h1 class="heading-1">Создание кампании</h1>
+                <div class="grid">
+
+                    <!--CAMPAIGN NAVIGATION-->
+
+                    <div class="col-3">
+                        <ol class="campaign-nav">
+                            <li class="campaign-nav__item completed">
+                                <div class="campaign-nav__upper">
+                                    <span class="campaign-nav__txt">Даты рассылки</span>
+                                </div>
+                                <span class="campaign-nav__sub">23.05.18-25.06.18</span>
+                            </li>
+                            <li class="campaign-nav__item campaign-nav__item completed">
+                                <div class="campaign-nav__upper">
+                                    <span class="campaign-nav__txt">Выбор аудитории</span>
+                                    <svg class="campaign-nav__icon">
+                                        <use xlink:href="assets/img/sprite-sheet.svg#arrow-down"></use>
+                                    </svg>
+                                </div>
+                                <div class="campaign-nav__audience">
+                                  <span>23 525 673 чел.</span>
+                                </div>
+
+                                <ul class="campaign-sub-menu">
+                                  <li class="campaign-sub-menu__item completed">
+                                    <a href="#">Социально-демографические данные</a>
+                                  </li>
+                                  <li class="campaign-sub-menu__item completed">
+                                    <a href="#">
+                                      ГЕО таргетинг
+                                    </a>
+                                  </li>  
+                                  <li class="campaign-sub-menu__item completed">
+                                    <a href="#">
+                                      Интересы и тонкие настройки
+                                    </a>
+                                  </li>
+                                  <li class="campaign-sub-menu__item completed">
+                                    <a href="">
+                                      Работа с собственной базой
+                                    </a>
+                                  </li>
+                                </ul>
+                            </li>
+                            <li class="campaign-nav__item active">
+                                <div class="campaign-nav__upper">
+                                    <span class="campaign-nav__txt">Пакет услуг</span>
+                                </div>
+                            </li>
+                            <li class="campaign-nav__item">
+                                <div class="campaign-nav__upper">
+                                    <span class="campaign-nav__txt">Каналы</span>
+                                </div>
+                            </li>
+                            <li class="campaign-nav__item">
+                                <div class="campaign-nav__upper">
+                                    <span class="campaign-nav__txt">Модерация</span>
+                                </div>
+                            </li>
+                            <li class="campaign-nav__item">
+                                <div class="campaign-nav__upper">
+                                    <span class="campaign-nav__txt">Договор</span>
+                                </div>
+                            </li>
+                            <li class="campaign-nav__item">
+                                <div class="campaign-nav__upper">
+                                    <span class="campaign-nav__txt">Оплата и запуск</span>
+                                </div>
+                            </li>
+                        </ol>
+                    </div>
+
+                    <!--SETTINGS BODY-->
+                    <div class="col">
+                        <div class="campaign">
+                            <div class="grid-noGutter">
+                                <div class="col-8 campaign-bg">
+
+                                  <form class="form" action="">
+                                          <div class="campaign-top">
+                                              <div class="campaign-heading">
+                                                  <div class="button-back">
+                                                      <a href="">
+                                                      <svg>
+                                                          <use xlink:href="assets/img/sprite-sheet.svg#arrow-left"></use>
+                                                      </svg>
+                                                      </a>
+                                                      </div>
+                                                      <h2 class="heading-2">Настройка стоимости</h2>  
+                                              </div>
+                                              <div class="sub-heading padding-left no-margin-bottom">
+                                                  <span>Для вашей аудитории мы рекомендуем пакет &laquo;М&raquo;.</span>
+                                              </div>
+                                          </div>
+                                          <div class="settings">
+                                              <div class="section no-padding-top">
+                                                <div class="formfield">
+                                                  <div class="campaign-plans">
+                                                    <div class="grid">
+                                                      <div class="col-4">
+                                                        <div class="campaign-plan">
+                                                          <div class="campaign-plan-top">
+                                                            <div class="campaign-plan-name">
+                                                              <span>Пакет S</span>
+                                                            </div>
+                                                            <div class="campaign-plan-audience">
+                                                              <span>1 200 чел.</span>
+                                                            </div>
+                                                          </div> 
+                                                          <div class="campaign-plan-bottom">
+                                                            <div class="campaign-plan-price">
+                                                              <span>
+                                                                5 400
+                                                                <span class="currency-format">
+                                                                    <svg>
+                                                                        <use xlink:href="assets/img/sprite-sheet.svg#rubles"></use>
+                                                                    </svg>
+                                                                </span>
+                                                              </span>
+                                                            </div>
+                                                          </div> 
+                                                        </div>
+                                                      </div>
+                                                      <div class="col-4">
+                                                        <div class="campaign-plan selected">
+                                                          <div class="campaign-plan-top">
+                                                            <div class="campaign-plan-name">
+                                                              <span>Пакет M</span>
+                                                            </div>
+                                                            <div class="campaign-plan-audience">
+                                                              <span>3 000 чел.</span>
+                                                            </div>
+                                                            <div class="campaign-plan-economy">
+                                                                <span>Экономия 10%</span>
+                                                            </div>
+                                                          </div> 
+                                                          <div class="campaign-plan-bottom">
+                                                            <div class="campaign-plan-price">
+                                                              <span>
+                                                                12 825
+                                                                <span class="currency-format">
+                                                                    <svg>
+                                                                        <use xlink:href="assets/img/sprite-sheet.svg#rubles"></use>
+                                                                    </svg>
+                                                                </span>
+                                                              </span>
+                                                            </div>
+                                                          </div> 
+                                                        </div>
+                                                      </div>
+                                                      <div class="col-4">
+                                                        <div class="campaign-plan">
+                                                          <div class="campaign-plan-top">
+                                                            <div class="campaign-plan-name">
+                                                              <span>Пакет L</span>
+                                                            </div>
+                                                            <div class="campaign-plan-audience">
+                                                              <span>10 000 чел.</span>
+                                                            </div>
+                                                            <div class="campaign-plan-economy">
+                                                                <span class="red">Экономия 15%</span>
+                                                            </div>
+                                                          </div> 
+                                                          <div class="campaign-plan-bottom">
+                                                            <div class="campaign-plan-price">
+                                                              <span>
+                                                                40 500
+                                                                <span class="currency-format">
+                                                                    <svg>
+                                                                        <use xlink:href="assets/img/sprite-sheet.svg#rubles"></use>
+                                                                    </svg>
+                                                                </span>
+                                                              </span>
+                                                            </div>
+                                                          </div> 
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                              <!--OPTIONS-->
+                                              <div class="section no-padding-top no-padding-bottom">
+                                                <div class="formfield no-margin-bottom">
+                                                  <div class="grid">
+                                                    <div class="col">
+                                                      <div class="label">
+                                                        <div class="label-txt">
+                                                          <span>Дополнительно этим абонентам можно отправить:</span>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                  <div class="grid">
+                                                      <div class="col-5">
+                                                          <div class="detail-settings">
+                                                              <div class="checkbox">
+                                                                  <label>
+                                                                      <input type="checkbox" /> 
+                                                                      <span class="label-txt">Сообщения в viber</span>
+                                                                  </label>
+                                                              </div>
+                                                          </div>
+                                                      </div>
+                                                      <div class="col-6">
+                                                          <div class="detail-settings">
+                                                              <div class="checkbox">
+                                                                  <label>
+                                                                      <input type="checkbox" /> 
+                                                                      <span class="label-txt">Письма на электронную почту</span>
+                                                                  </label>
+                                                              </div>
+                                                          </div>
+                                                      </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                              <div class="section no-padding-bottom">
+                                                <div class="formfield margin-bottom-sm">
+                                                  <div class="grid">
+                                                    <div class="col">
+                                                      <div class="label no-margin-bottom">
+                                                        <div class="label-txt">
+                                                          <span>Вы уже выбрали</span>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                              <hr>
+                                              <div class="section">
+                                                  <div class="grid">
+                                                      <div class="col">
+                                                          <div class="detail-settings">
+                                                              <div class="checkbox">
+                                                                  <label>
+                                                                      <input type="checkbox" checked /> 
+                                                                      <span class="label-txt">Социально-демографические данные</span>
+                                                                  </label>
+                                                              </div>
+                                                              <div class="detail-settings-arrow">
+                                                                  <svg>
+                                                                      <use xlink:href="assets/img/sprite-sheet.svg#arrow-down"></use>
+                                                                  </svg>
+                                                              </div>
+                                                          </div>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                              <hr>
+                                              <div class="section">
+                                                  <div class="grid">
+                                                      <div class="col">
+                                                          <div class="detail-settings">
+                                                              <div class="checkbox">
+                                                                  <label>
+                                                                      <input type="checkbox" checked /> 
+                                                                      <span class="label-txt">Интересы и тонкие настройки</span>
+                                                                  </label>
+                                                              </div>
+                                                              <div class="detail-settings-arrow">
+                                                                  <svg>
+                                                                      <use xlink:href="assets/img/sprite-sheet.svg#arrow-down"></use>
+                                                                  </svg>
+                                                              </div>
+                                                          </div>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                              <hr>
+                                              <div class="section">
+                                                  <div class="grid">
+                                                      <div class="col">
+                                                          <div class="detail-settings">
+                                                              <div class="checkbox">
+                                                                  <label>
+                                                                      <input type="checkbox" /> 
+                                                                      <span class="label-txt">Геотаргетинг</span>
+                                                                  </label>
+                                                              </div>
+                                                              <div class="detail-settings-arrow">
+                                                                  <svg>
+                                                                      <use xlink:href="assets/img/sprite-sheet.svg#arrow-down"></use>
+                                                                  </svg>
+                                                              </div>
+                                                          </div>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                              <hr>
+                                          </div>
+                                        </form>
+                                        <div class="campaign-bottom">
+                                            <div class="next-step">
+                                                <div class="grid">
+                                                    <div class="col">
+                                                        <input type="submit" href="#" class="btn btn--bordered" value="Следующий шаг" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                </div>
+                            <div class="col-4">
+                                <div class="campaign-info">
+                                  <div class="campaign-info-top">
+                                    <div class="section">
+                                      <div class="campaign-audience">
+                                          <div class="campaign-audience-title">
+                                              <p class="campaign-audience-title--upper">Охват аудитории</p>
+                                              <p class="campaign-audience-title--sub">36 592 339 чел</p>
+                                          </div>
+                                          <div class="campaign-audience-img">
+                                              <img src="assets/img/images/people.svg" alt="">
+                                          </div>
+                                        </div>
+                                        <div class="campaign-tarif">
+                                          <div class="campaign-tarif-icon">
+                                            <svg>
+                                              <use xlink:href="assets/img/sprite-sheet.svg#info"></use>
+                                            </svg>
+                                          </div>
+                                          <div class="campaign-tarif-info">
+                                              <div class="campaign-tarif-sms">
+                                                <span>3 000 SMS</span>
+                                              </div>
+                                              <div class="campaign-tarif-sms-price">
+                                                4,5 
+                                                <svg>
+                                                  <use xlink:href="assets/img/sprite-sheet.svg#rubles"></use>
+                                                </svg>
+                                                за сообщение
+                                              </div>
+                                          </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                    <hr>
+                                    <div class="campaign-info-bottom">
+                                      <div class="section">
+                                        <div class="campaign-price">
+                                            <span class="campaign-price-heading">Стоимость</span>
+                                            <span class="campaign-price-sum">
+                                              14 552
+                                              <span class="campaign-price-currency">
+                                                <svg>
+                                                  <use xlink:href="/assets/img/sprite-sheet.svg#rubles"></use>
+                                                </svg>
+                                              </span>
+                                            </span>
+                                        </div>
+                                      </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- END SETTINGS -->
+
+    <!--FOOTER-->
+
+    <footer class="footer">
+        <div class="edge"></div>
+        <div class="container">
+            <div class="footer__content">
+                    <div class="grid-middle">
+                        <div class="col-6">
+                            <div class="grid-middle">
+                                <div class="col">
+                                    <div class="promo">
+                                        <p class="promo__title"> МТС маркетолог</p>
+                                        <p class="promo__txt">
+                                            Найдем ваших новых клиентов
+                                            <br> среди более чем 80 млн уникальных
+                                            <br> пользователей
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <a href="#" class="btn btn--bordered-light btn--full-width">
+                                        <svg>
+                                            <use xlink:href="assets/img/sprite-sheet.svg#download"></use>
+                                        </svg>
+                                        Услуги и цены.pdf
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="grid">
+                                <div class="col-8" data-push-left="off-2">
+                                    <a href="" class="btn btn--disabled btn--bordered">
+                                        <svg>
+                                            <use xlink:href="assets/img/sprite-sheet.svg#plus"></use>
+                                        </svg>
+                                        Создать рекламную кампанию
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container--noGutters">
+                <hr>
+            </div>
+            <div class="container">
+                <div class="footer__content">
+                    <div class="grid">
+                        <div class="col-6">
+                            <div class="cards">
+                                <div class="grid-equalHeight">
+                                    <div class="col">
+                                        <div class="card">
+                                            <span class="card__title">Персональное сопровождение</span>
+                                            <p class="card__body">
+                                                Если бюджет рекламной кампании первышает 50 000 рублей в месяц, мы предложим вам персонального менеджер, который поможет
+                                                повысить эффективность рекламы.
+                                            </p>
+                                            <a href="#" class="btn btn--white btn--sm">Оставить заявку</a>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card">
+                                            <span class="card__title">Рекламным агентствам</span>
+                                            <p class="card__body">
+                                                Расширенные функции и индивидуальные условия для рекламных агентств.
+                                            </p>
+                                            <a href="#" class="btn btn--white btn--sm">Оставить заявку</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="grid">
+                                <div class="col-4" data-push-left="off-2">
+                                    <div class="services">
+                                        <span class="services__title">Услуги</span>
+                                        <ul class="services__nav">
+                                            <li class="services__item">
+                                                <a href="">Поиск новых клиентов</a>
+                                            </li>
+                                            <li class="services__item">
+                                                <a href="">Работа с вашей базой</a>
+                                            </li>
+                                            <li class="services__item">
+                                                <a href="">МТС Cashback</a>
+                                            </li>
+                                            <li class="services__item">
+                                                <a href="">Programmatic</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="faq">
+                                        <a href="#" class="faq__link">Faq</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="legal">&copy; ПАО &laquo;МТС&raquo;. Все права защищены.</span>
+                </div>
+            </div>
+    </footer>
+</body>
+
+</html>

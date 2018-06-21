@@ -1,22 +1,16 @@
 .campaign-info 
 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
   background-color: @darkBlueColor;
   color: @whiteColor;
 
   &-title {
-    margin-bottom: 3rem;
-    padding: 4.3rem 2.4rem 0 2.4rem;
-
-    &__upper {
-      font-size: 1.2rem;
-      font-weight: 700;
-      line-height: 1.6rem;
-    }
 
     &__sub {
-      font-size: 3.2rem;
-      line-height: 3.6rem;
+      
     }
   }
 
@@ -34,4 +28,104 @@
     }
   }
   
+}
+
+.campaign-audience
+{
+  &-title
+  {
+    margin-bottom: 3rem;
+
+    &--upper
+    {
+      font-size: 1.2rem;
+      font-weight: 700;
+      line-height: 1.6rem;
+      opacity: .3;
+    }
+
+    &--sub
+    {
+      font-size: 3.2rem;
+      line-height: 3.6rem;
+    }
+  }
+}
+
+.campaign-tarif
+{
+  display: flex;
+
+  &-icon
+  {
+    margin-right: 14px;
+
+    & > svg
+    {
+      width: 24px;
+      height: 24px;
+      fill: @whiteColor;
+      opacity: .3;
+    }
+  }
+
+  &-info
+  {
+    display: inline-block;
+    margin-bottom: 4px;
+  }
+
+  &-sms
+  {
+
+  }
+
+  &-sms-price
+  {
+    display: flex;
+    align-items: center;
+
+    & > svg
+    {
+      fill: @whiteColor;
+      width: 14px;
+      height: 14px;
+    }
+  }
+}
+
+.campaign-price
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &-heading
+  {
+    font-size: 1.6rem;
+    line-height: 1.5;
+    opacity: .3;
+  }
+
+  &-sum
+  {
+    display: flex;
+    align-items: center;
+    font-size: 4.2rem;
+    line-height: 3.6rem;
+  }
+
+  &-currency
+  {
+    
+    width: 4.2rem;
+    height: 4.2rem;
+
+    svg
+    {
+      fill: @whiteColor;
+      width: 4rem;
+      height: 4rem;
+    }
+  }
 }

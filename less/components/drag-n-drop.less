@@ -1,0 +1,52 @@
+.drag-n-drop
+{
+
+  margin: 0 0 2.4rem 0;
+
+  .label
+  {
+    display: inline-block;
+    color: #999999;
+    font-size: 1.4rem;
+    position: relative;
+    margin-bottom: 1rem;
+  }
+
+  .drop-area
+  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 12rem;
+    border: 2px dashed @lightgrayColor-2;
+
+    &.big
+    {
+      height: 24rem;
+    }
+
+    .message
+    {
+      display: flex;
+      align-items: center;
+      color: #333333;
+      font-size: 1.4rem;
+      line-height: 1.43;
+    }
+    
+
+    .icon
+    {
+      width: 4rem;
+      height: 4rem;
+      margin-right: 1rem;
+
+      svg
+      {
+        fill: @primary-color;
+        width: 4rem;
+        height: 4rem;
+      }
+    }
+  }      
+}

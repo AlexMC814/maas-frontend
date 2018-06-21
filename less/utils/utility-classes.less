@@ -4,19 +4,23 @@
   
   &.no-padding-bottom
   {
-    padding: 3.2rem;
     padding-bottom: 0;
   }
 
   &.no-padding-top
   {
-    padding: 3.2rem;
     padding-top: 0;
   }
 
   .next-step
   {
     padding-top: 0 !important;
+  }
+
+  [class*=col-], [class*=col_], [class~=col] 
+  {
+    box-sizing: border-box;
+    padding: 0 1rem 0;
   }
 }
 

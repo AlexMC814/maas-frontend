@@ -1,0 +1,118 @@
+.checkboxes
+{
+
+  &.inline
+  {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+}
+
+.checkbox
+{
+
+  label
+  {
+    cursor: pointer;
+  }
+
+  .label-txt
+    {
+      font-size: 1.4rem;
+      vertical-align: middle;
+    }
+
+  input[type="checkbox"]
+  {
+    display: none;
+
+    + .label-txt:before
+    {
+      content: '';
+      box-sizing: border-box;
+      display: inline-block;
+      vertical-align: middle;
+      width: 16px;
+      height: 16px;
+      border: 2px solid #cccccc;
+      border-radius: 2px;
+      margin-right: 1rem;
+    }
+
+    &:checked + .label-txt:before
+    {
+        content: '';
+        width: 16px;
+        height: 16px;
+        background: url(/assets/img/icons/checkbox.svg) no-repeat;
+        background-size: 16px 16px;
+        border: none;
+    }
+  }
+}
+
+.slider-checkbox
+{
+
+  display: block;
+  align-items: center;
+  position: relative;
+  width: 40px;
+  height: 16px;
+
+  label
+  {
+    cursor: pointer;
+  }
+
+  input
+  {
+    display: none;
+  }
+
+  input:checked + .slider-checkbox-line
+  {
+    background-color: @primary-color;
+  }
+
+  input:checked + .slider-checkbox-line:after
+  {
+    transform: translateX(20px);
+  }
+
+  &-line
+  {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(227, 6, 19, 0.1);
+    border-radius: 20px;
+    transition: all .3s ease-in;
+
+    &:after
+    {
+      content: '';
+      position: absolute;
+      box-sizing: border-box;
+      top: -4px;
+      width: 24px;
+      height: 24px;
+      border: 6px solid @primary-color;
+      border-radius: 50px;
+      background-color: @whiteColor;
+      transition: all .3s ease-in;
+    }
+  }
+
+  &-txt
+  {
+    position: absolute;
+    width: 400px;
+    top: 0;
+    margin-left: 50px;
+  }
+}
