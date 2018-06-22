@@ -7,12 +7,6 @@
   background-color: @darkBlueColor;
   color: @whiteColor;
 
-  &-title {
-
-    &__sub {
-      
-    }
-  }
 
   &__img {
     text-align: center;
@@ -50,11 +44,24 @@
       line-height: 3.6rem;
     }
   }
+
+  &-img
+  {
+    margin-bottom: 4rem;
+    text-align: center;
+  }
 }
 
 .campaign-tarif
 {
-  display: flex;
+  
+  min-height: 20rem;
+
+  &-group
+  {
+    display: flex;
+    margin-bottom: 37px;
+  }
 
   &-icon
   {
@@ -73,23 +80,25 @@
   {
     display: inline-block;
     margin-bottom: 4px;
-  }
 
-  &-sms
-  {
-
-  }
-
-  &-sms-price
-  {
-    display: flex;
-    align-items: center;
-
-    & > svg
+    &-top
     {
-      fill: @whiteColor;
-      width: 14px;
-      height: 14px;
+      line-height: 1.5;
+    }
+
+    &-sub
+    {
+      display: flex;
+      align-items: center;
+      line-height: 1.43;
+      opacity: .3;
+
+      & > svg
+      {
+        fill: @whiteColor;
+        width: 14px;
+        height: 14px;
+      }
     }
   }
 }

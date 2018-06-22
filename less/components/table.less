@@ -1,0 +1,38 @@
+.table
+{
+
+  width: 100%;
+  font-size: 1.4rem;
+  color: #808080;
+  margin-top: 16px;
+  margin-bottom: 24px;
+
+  tr
+  {
+    &:nth-child(odd)
+    {
+      background-color: rgba(247, 247, 247, .6);
+    }
+  }
+
+  td
+  {
+    box-sizing: border-box;
+    padding: 14px;
+    width: 95%;
+  }
+  
+
+  td.pin
+  {
+
+    width: 5%;
+    & > svg
+    {
+      width: 16px;
+      height: 16px;
+      fill: #d0d6da;
+    }
+  }
+
+}
